@@ -1,4 +1,4 @@
-package me.mathieusoysal.codingame-stats;
+package me.mathieusoysal.codingame_stats;
 
 import static org.junit.Assert.assertTrue;
 
