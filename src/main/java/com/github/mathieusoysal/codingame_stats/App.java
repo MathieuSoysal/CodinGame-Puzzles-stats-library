@@ -1,4 +1,4 @@
-package me.mathieusoysal.codingame_stats;
+package com.github.mathieusoysal.codingame_stats;
 
 /**
  * Hello world!
