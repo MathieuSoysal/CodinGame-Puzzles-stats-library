@@ -1964,7 +1964,7 @@
 											"top": 550,
 											"width": 122.49072265625,
 											"height": 13,
-											"text": "+id: String",
+											"text": "-id: String",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1981,7 +1981,7 @@
 											"top": 565,
 											"width": 122.49072265625,
 											"height": 13,
-											"text": "+puzzleId: int",
+											"text": "-puzzleId: int",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1998,7 +1998,7 @@
 											"top": 580,
 											"width": 122.49072265625,
 											"height": 13,
-											"text": "+title: String",
+											"text": "-title: String",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2015,7 +2015,7 @@
 											"top": 595,
 											"width": 122.49072265625,
 											"height": 13,
-											"text": "+description: String",
+											"text": "-description: String",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2032,7 +2032,7 @@
 											"top": 610,
 											"width": 122.49072265625,
 											"height": 13,
-											"text": "+points: int",
+											"text": "-points: int",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2049,7 +2049,7 @@
 											"top": 625,
 											"width": 122.49072265625,
 											"height": 13,
-											"text": "+progress: int",
+											"text": "-progress: int",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2066,7 +2066,7 @@
 											"top": 640,
 											"width": 122.49072265625,
 											"height": 13,
-											"text": "+progressMax: int",
+											"text": "-progressMax: int",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2083,7 +2083,7 @@
 											"top": 655,
 											"width": 122.49072265625,
 											"height": 13,
-											"text": "+completionTime: int",
+											"text": "-completionTime: int",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2100,7 +2100,7 @@
 											"top": 670,
 											"width": 122.49072265625,
 											"height": 13,
-											"text": "+imageBinaryId: long",
+											"text": "-imageBinaryId: long",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2117,7 +2117,7 @@
 											"top": 685,
 											"width": 122.49072265625,
 											"height": 13,
-											"text": "+weight: double",
+											"text": "-weight: double",
 											"horizontalAlignment": 0
 										}
 									],
@@ -2855,7 +2855,7 @@
 											"top": 862,
 											"width": 98.63623046875,
 											"height": 13,
-											"text": "+handle: String",
+											"text": "-handle: String",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2872,7 +2872,7 @@
 											"top": 877,
 											"width": 98.63623046875,
 											"height": 13,
-											"text": "+value: String",
+											"text": "-value: String",
 											"horizontalAlignment": 0
 										}
 									],
@@ -6847,6 +6847,7 @@
 								"$ref": "AAAAAAF9v0h1zyj0QHk="
 							},
 							"name": "id",
+							"visibility": "private",
 							"type": "String"
 						},
 						{
@@ -6856,6 +6857,7 @@
 								"$ref": "AAAAAAF9v0h1zyj0QHk="
 							},
 							"name": "puzzleId",
+							"visibility": "private",
 							"type": "int"
 						},
 						{
@@ -6865,6 +6867,7 @@
 								"$ref": "AAAAAAF9v0h1zyj0QHk="
 							},
 							"name": "title",
+							"visibility": "private",
 							"type": "String"
 						},
 						{
@@ -6874,6 +6877,7 @@
 								"$ref": "AAAAAAF9v0h1zyj0QHk="
 							},
 							"name": "description",
+							"visibility": "private",
 							"type": "String"
 						},
 						{
@@ -6883,6 +6887,7 @@
 								"$ref": "AAAAAAF9v0h1zyj0QHk="
 							},
 							"name": "points",
+							"visibility": "private",
 							"type": "int"
 						},
 						{
@@ -6892,6 +6897,7 @@
 								"$ref": "AAAAAAF9v0h1zyj0QHk="
 							},
 							"name": "progress",
+							"visibility": "private",
 							"type": "int"
 						},
 						{
@@ -6901,6 +6907,7 @@
 								"$ref": "AAAAAAF9v0h1zyj0QHk="
 							},
 							"name": "progressMax",
+							"visibility": "private",
 							"type": "int"
 						},
 						{
@@ -6910,6 +6917,7 @@
 								"$ref": "AAAAAAF9v0h1zyj0QHk="
 							},
 							"name": "completionTime",
+							"visibility": "private",
 							"type": "int"
 						},
 						{
@@ -6919,6 +6927,7 @@
 								"$ref": "AAAAAAF9v0h1zyj0QHk="
 							},
 							"name": "imageBinaryId",
+							"visibility": "private",
 							"type": "long"
 						},
 						{
@@ -6928,6 +6937,7 @@
 								"$ref": "AAAAAAF9v0h1zyj0QHk="
 							},
 							"name": "weight",
+							"visibility": "private",
 							"type": "double"
 						}
 					]
@@ -7081,6 +7091,7 @@
 								"$ref": "AAAAAAF9v0rK9i3m4Kg="
 							},
 							"name": "handle",
+							"visibility": "private",
 							"type": "String"
 						},
 						{
@@ -7090,6 +7101,7 @@
 								"$ref": "AAAAAAF9v0rK9i3m4Kg="
 							},
 							"name": "value",
+							"visibility": "private",
 							"type": "String"
 						}
 					]
