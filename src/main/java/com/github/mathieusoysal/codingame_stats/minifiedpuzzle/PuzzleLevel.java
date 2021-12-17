@@ -19,8 +19,8 @@ public enum PuzzleLevel {
         this.value = value;
     }
 
-    public Object isSpecialLevel() {
-        return null;
+    public boolean isSpecialLevel() {
+        return this == TUTORIAL || this == MULTI || this == CODEGOLF || this == OPTIM;
     }
 
 }
