@@ -51,7 +51,7 @@ public class MinifiedPuzzle {
     /**
      * 
      */
-    private FeedBack feedBack;
+    private FeedBack feedback;
 
     public int getId() {
         return id;
@@ -77,8 +77,8 @@ public class MinifiedPuzzle {
         return level;
     }
 
-    public FeedBack getFeedBack() {
-        return feedBack;
+    public FeedBack getFeedback() {
+        return feedback;
     }
 
     public boolean isSubmitted() {

@@ -67,7 +67,7 @@ public class CodinGameApiTest {
 
         @Test
         void testGetAllMinifiedPuzzlesNotNullFeedBack() {
-            assertThat(minifiedPuzzles.stream().filter(p -> p.getFeedBack() != null).toList().size(), greaterThan(0));
+            assertThat(minifiedPuzzles.stream().filter(p -> p.getFeedback() != null).toList().size(), greaterThan(0));
         }
 
     }
