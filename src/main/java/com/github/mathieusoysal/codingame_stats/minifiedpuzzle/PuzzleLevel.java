@@ -15,6 +15,14 @@ public enum PuzzleLevel {
 
     private String value;
 
+    public static PuzzleLevel fromValue(String value) {
+        value = value.toLowerCase();
+        for (PuzzleLevel puzzleLevel : PuzzleLevel.values())
+            if (puzzleLevel.value.equals(value))
+                return puzzleLevel;
+        throw new IllegalArgumentException(value);
+    }
+
     private PuzzleLevel(String value) {
         this.value = value;
     }
