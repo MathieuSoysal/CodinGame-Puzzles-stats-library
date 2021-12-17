@@ -33,4 +33,11 @@ public class CodinGameTest {
         assertThat(minifiedPuzzles, everyItem(notNullValue()));
     }
 
+    @Test
+    void testAllMinifiedPuzzlesNotNullId() {
+        CodinGame codinGame = new CodinGame();
+        List<MinifiedPuzzle> minifiedPuzzles = codinGame.getAllMinifiedPuzzles();
+        assertThat(minifiedPuzzles, everyItem(hasProperty("id", notNullValue())));
+    }
+
 }
