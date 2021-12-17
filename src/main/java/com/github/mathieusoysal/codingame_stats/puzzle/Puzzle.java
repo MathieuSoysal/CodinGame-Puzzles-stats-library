@@ -102,4 +102,71 @@ public class Puzzle extends MinifiedPuzzle {
      */
     private PuzzleType type;
 
+    public String getTitle() {
+        return title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getStatement() {
+        return statement;
+    }
+
+    public int getAchiviementCount() {
+        return achiviementCount;
+    }
+
+    public int getDoneAchievementCount() {
+        return doneAchievementCount;
+    }
+
+    public String getForumLink() {
+        return forumLink;
+    }
+
+    public int getAttemptCount() {
+        return attemptCount;
+    }
+
+    public int getXpPoint() {
+        return xpPoint;
+    }
+
+    public String getPrettyId() {
+        return prettyId;
+    }
+
+    public String getDetailsPageUrl() {
+        return detailsPageUrl;
+    }
+
+    public boolean isCommunityCreation() {
+        return communityCreation;
+    }
+
+    public TitleMap getTitleMap() {
+        return titleMap;
+    }
+
+    public User getContributor() {
+        return contributor;
+    }
+
+    public User getModerators() {
+        return moderators;
+    }
+
+    public Set<Topic> getTopics() {
+        return topics;
+    }
+
+    public Set<Achievement> getLinkedAchievements() {
+        return linkedAchievements;
+    }
+
+    public PuzzleType getType() {
+        return type;
+    }
 }
