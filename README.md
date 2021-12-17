@@ -1,8 +1,8 @@
 
 
-## title
+## CodinGame-Puzzle-stats-library
 
-explain
+Is a simple library to interact with CodinGame Puzzle API
 
 ## How to integrate the CodinGame-Puzzle-Stats library into your code
 
