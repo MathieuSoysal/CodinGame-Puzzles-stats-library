@@ -31,13 +31,13 @@ public class FeedBackTest {
     void testConversionFromJsonFeedBack() {
         String json = "{\"feedbackId\":1649,\"feedbacks\":[4,0,1,16,31]}";
         FeedBack feedBack = new Gson().fromJson(json, FeedBack.class);
-        assertEquals(1649, feedBack.feedBackId());
+        assertEquals(1649, feedBack.getFeedbackId());
     }
 
     @Test
     void testConversionFromJsonFeedBackWithNullAndEmpty() {
         String json = "{\"feedbackId\":1649,\"feedbacks\":[4,0,1,16,31]}";
         FeedBack feedBack = new Gson().fromJson(json, FeedBack.class);
-        assertArrayEquals(new int[] { 4, 0, 1, 16, 31 }, feedBack.feedBacks());
+        assertArrayEquals(new int[] { 4, 0, 1, 16, 31 }, feedBack.getFeedbacks());
     }
 }

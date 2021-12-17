@@ -4,14 +4,21 @@ import java.util.Arrays;
 import java.util.Objects;
 import java.util.stream.IntStream;
 
-public record FeedBack(int feedBackId,
-        int[] feedBacks) {
+public class FeedBack {
+
+    private int feedbackId;
+    private int[] feedbacks;
+
+    public FeedBack(int feedbackId, int[] feedbacks) {
+        this.feedbackId = feedbackId;
+        this.feedbacks = feedbacks;
+    }
 
     /**
      * @return
      */
     public double getMoy() {
-        return IntStream.of(feedBacks).sum() / (double) feedBacks.length;
+        return IntStream.of(feedbacks).sum() / (double) feedbacks.length;
     }
 
     /**
@@ -19,14 +26,14 @@ public record FeedBack(int feedBackId,
      * @return
      */
     public int getNbStarsFor(int numStar) {
-        return feedBacks[numStar - 1];
+        return feedbacks[numStar - 1];
     }
 
     @Override
     public String toString() {
         return "FeedBack{" +
-                "feedBackId=" + feedBackId +
-                ", feedBacks=" + Arrays.toString(feedBacks) +
+                "feedBackId=" + feedbackId +
+                ", feedBacks=" + Arrays.toString(feedbacks) +
                 '}';
     }
 
@@ -37,12 +44,20 @@ public record FeedBack(int feedBackId,
         if (o == null || getClass() != o.getClass())
             return false;
         FeedBack feedBack = (FeedBack) o;
-        return feedBackId == feedBack.feedBackId;
+        return feedbackId == feedBack.feedbackId;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(feedBackId);
+        return Objects.hash(feedbackId);
+    }
+
+    public int getFeedbackId() {
+        return feedbackId;
+    }
+
+    public int[] getFeedbacks() {
+        return feedbacks;
     }
 
 }
