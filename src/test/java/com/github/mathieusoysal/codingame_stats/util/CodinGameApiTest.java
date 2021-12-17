@@ -8,6 +8,7 @@ import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.hasProperty;
 import static org.hamcrest.Matchers.notNullValue;
 
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 public class CodinGameApiTest {
@@ -24,10 +25,20 @@ public class CodinGameApiTest {
         assertThat(minifiedPuzzles, everyItem(notNullValue()));
     }
 
-    @Test
-    void testGetAllMinifiedPuzzlesNotNullId() {
+    @Nested
+    class propertyTest {
         List<MinifiedPuzzle> minifiedPuzzles = CodinGameApi.getAllMinifiedPuzzles();
-        assertThat(minifiedPuzzles, everyItem(hasProperty("id", notNullValue())));
+
+        @Test
+        void testGetAllMinifiedPuzzlesNotNullId() {
+            assertThat(minifiedPuzzles, everyItem(hasProperty("id", notNullValue())));
+        }
+
+        @Test
+        void testGetAllMinifiedPuzzlesNotNullLevel() {
+            assertThat(minifiedPuzzles.stream().filter(p -> p.getLevel() != null).toList().size() , greaterThan(0));
+        }
+
     }
 
 }
