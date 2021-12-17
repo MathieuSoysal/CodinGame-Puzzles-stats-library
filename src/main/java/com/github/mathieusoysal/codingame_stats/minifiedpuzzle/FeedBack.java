@@ -1,4 +1,4 @@
-package com.github.mathieusoysal.codingame_stats;
+package com.github.mathieusoysal.codingame_stats.minifiedpuzzle;
 
 import java.util.*;
 
@@ -32,7 +32,7 @@ public class FeedBack {
     }
 
     /**
-     * @param numStar 
+     * @param numStar
      * @return
      */
     public int getNbStarsFor(int numStar) {

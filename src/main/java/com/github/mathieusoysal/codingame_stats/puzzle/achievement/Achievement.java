@@ -1,6 +1,4 @@
-package com.github.mathieusoysal.codingame_stats;
-
-import java.util.*;
+package com.github.mathieusoysal.codingame_stats.puzzle.achievement;
 
 /**
  * 

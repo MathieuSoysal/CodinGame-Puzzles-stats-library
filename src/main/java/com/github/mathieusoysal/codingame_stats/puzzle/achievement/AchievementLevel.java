@@ -1,4 +1,4 @@
-package com.github.mathieusoysal.codingame_stats;
+package com.github.mathieusoysal.codingame_stats.puzzle.achievement;
 
 /**
  * 
