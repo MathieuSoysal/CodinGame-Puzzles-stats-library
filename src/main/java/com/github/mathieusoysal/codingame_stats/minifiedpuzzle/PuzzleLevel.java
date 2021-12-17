@@ -4,14 +4,14 @@ package com.github.mathieusoysal.codingame_stats.minifiedpuzzle;
  * 
  */
 public enum PuzzleLevel {
+    TUTORIAL("tutorial"),
+    EASY("easy"),
     MEDIUM("medium"),
     HARD("hard"),
-    MULTI("multi"),
     EXPERT("expert"),
-    EASY("easy"),
+    MULTI("multi"),
     CODEGOLF("codegolf"),
-    OPTIM("optim"),
-    TUTORIAL("tutorial");
+    OPTIM("optim");
 
     private String value;
 
