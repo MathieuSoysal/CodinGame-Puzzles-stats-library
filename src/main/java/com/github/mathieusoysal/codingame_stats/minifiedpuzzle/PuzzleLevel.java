@@ -1,31 +1,28 @@
 package com.github.mathieusoysal.codingame_stats.minifiedpuzzle;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * 
  */
 public enum PuzzleLevel {
-    TUTORIAL("tutorial"),
-    EASY("easy"),
-    MEDIUM("medium"),
-    HARD("hard"),
-    EXPERT("expert"),
-    MULTI("multi"),
-    CODEGOLF("codegolf"),
-    OPTIM("optim");
+    @SerializedName("tutorial")
+    TUTORIAL,
+    @SerializedName("easy")
+    EASY,
+    @SerializedName("medium")
+    MEDIUM,
+    @SerializedName("hard")
+    HARD,
+    @SerializedName("expert")
+    EXPERT,
+    @SerializedName("multi")
+    MULTI,
+    @SerializedName("codegolf")
+    CODEGOLF,
+    @SerializedName("optim")
+    OPTIM;
 
-    private String value;
-
-    public static PuzzleLevel fromValue(String value) {
-        value = value.toLowerCase();
-        for (PuzzleLevel puzzleLevel : PuzzleLevel.values())
-            if (puzzleLevel.value.equals(value))
-                return puzzleLevel;
-        throw new IllegalArgumentException(value);
-    }
-
-    private PuzzleLevel(String value) {
-        this.value = value;
-    }
 
     public boolean isSpecialLevel() {
         return this == TUTORIAL || this == MULTI || this == CODEGOLF || this == OPTIM;
