@@ -53,4 +53,36 @@ public class MinifiedPuzzle {
      */
     private FeedBack feedBack;
 
+    public int getId() {
+        return id;
+    }
+
+    public int getValidatorScore() {
+        return validatorScore;
+    }
+
+    public long getCreationTime() {
+        return creationTime;
+    }
+
+    public int getRank() {
+        return rank;
+    }
+
+    public int getSolvedcount() {
+        return solvedcount;
+    }
+
+    public PuzzleLevel getLevel() {
+        return level;
+    }
+
+    public FeedBack getFeedBack() {
+        return feedBack;
+    }
+
+    public boolean isSubmitted() {
+        return submitted;
+    }
+
 }

@@ -33,7 +33,7 @@ public class CodinGame implements InterfaceCodinGame {
     }
 
     List<Integer> getAllPuzzlesID() {
-        return null;
+        return getAllMinifiedPuzzles().parallelStream().map(MinifiedPuzzle::getId).toList();
     }
 
 }
