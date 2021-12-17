@@ -2,7 +2,7 @@
 
 ## CodinGame-Puzzle-stats-library
 
-Is a simple library to interact with CodinGame puzzle API.
+Simple library to interact with CodinGame puzzle API.
 
 ## How to integrate the CodinGame-Puzzle-Stats-library into your code
 
