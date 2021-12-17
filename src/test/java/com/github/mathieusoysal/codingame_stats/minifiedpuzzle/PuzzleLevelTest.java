@@ -27,16 +27,4 @@ public class PuzzleLevelTest {
         assertThat(PuzzleLevel.OPTIM.isSpecialLevel(), is(true));
     }
 
-    @Test
-    public void testGetLevelFromString(){
-        assertThat(PuzzleLevel.fromValue("tutorial"), is(PuzzleLevel.TUTORIAL));
-        assertThat(PuzzleLevel.fromValue("easy"), is(PuzzleLevel.EASY));
-        assertThat(PuzzleLevel.fromValue("medium"), is(PuzzleLevel.MEDIUM));
-        assertThat(PuzzleLevel.fromValue("hard"), is(PuzzleLevel.HARD));
-        assertThat(PuzzleLevel.fromValue("expert"), is(PuzzleLevel.EXPERT));
-        assertThat(PuzzleLevel.fromValue("multi"), is(PuzzleLevel.MULTI));
-        assertThat(PuzzleLevel.fromValue("codegolf"), is(PuzzleLevel.CODEGOLF));
-        assertThat(PuzzleLevel.fromValue("optim"), is(PuzzleLevel.OPTIM));
-    }
-
 }
