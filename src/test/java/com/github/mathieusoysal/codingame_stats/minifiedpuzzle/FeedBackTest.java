@@ -14,13 +14,13 @@ public class FeedBackTest {
 
     @Test
     void testGetMoy() {
-        FeedBack feedBack = new FeedBack(32, new int[] { 2, 2, 2, 2 });
+        Feedback feedBack = new Feedback(32, new int[] { 2, 2, 2, 2 });
         assertThat(feedBack.getMoy(), is(2.0));
     }
 
     @Test
     void testGetNbStarsFrom() {
-        FeedBack feedBack = new FeedBack(32, new int[] { 4, 3, 1, 5 });
+        Feedback feedBack = new Feedback(32, new int[] { 4, 3, 1, 5 });
         assertEquals(4, feedBack.getNbStarsFor(1));
         assertEquals(3, feedBack.getNbStarsFor(2));
         assertEquals(1, feedBack.getNbStarsFor(3));
@@ -30,14 +30,14 @@ public class FeedBackTest {
     @Test
     void testConversionFromJsonFeedBack() {
         String json = "{\"feedbackId\":1649,\"feedbacks\":[4,0,1,16,31]}";
-        FeedBack feedBack = new Gson().fromJson(json, FeedBack.class);
+        Feedback feedBack = new Gson().fromJson(json, Feedback.class);
         assertEquals(1649, feedBack.getFeedbackId());
     }
 
     @Test
     void testConversionFromJsonFeedBackWithNullAndEmpty() {
         String json = "{\"feedbackId\":1649,\"feedbacks\":[4,0,1,16,31]}";
-        FeedBack feedBack = new Gson().fromJson(json, FeedBack.class);
+        Feedback feedBack = new Gson().fromJson(json, Feedback.class);
         assertArrayEquals(new int[] { 4, 0, 1, 16, 31 }, feedBack.getFeedbacks());
     }
 }

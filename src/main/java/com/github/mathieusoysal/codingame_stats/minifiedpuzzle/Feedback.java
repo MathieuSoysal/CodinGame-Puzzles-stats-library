@@ -4,12 +4,12 @@ import java.util.Arrays;
 import java.util.Objects;
 import java.util.stream.IntStream;
 
-public class FeedBack {
+public class Feedback {
 
     private int feedbackId;
     private int[] feedbacks;
 
-    public FeedBack(int feedbackId, int[] feedbacks) {
+    public Feedback(int feedbackId, int[] feedbacks) {
         this.feedbackId = feedbackId;
         this.feedbacks = feedbacks;
     }
@@ -31,9 +31,9 @@ public class FeedBack {
 
     @Override
     public String toString() {
-        return "FeedBack{" +
-                "feedBackId=" + feedbackId +
-                ", feedBacks=" + Arrays.toString(feedbacks) +
+        return "Feedback{" +
+                "feedbackId=" + feedbackId +
+                ", feedbacks=" + Arrays.toString(feedbacks) +
                 '}';
     }
 
@@ -43,7 +43,7 @@ public class FeedBack {
             return true;
         if (o == null || getClass() != o.getClass())
             return false;
-        FeedBack feedBack = (FeedBack) o;
+        Feedback feedBack = (Feedback) o;
         return feedbackId == feedBack.feedbackId;
     }
 
