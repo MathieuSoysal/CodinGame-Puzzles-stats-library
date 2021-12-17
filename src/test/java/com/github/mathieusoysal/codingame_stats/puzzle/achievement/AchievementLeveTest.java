@@ -1,10 +1,8 @@
 package com.github.mathieusoysal.codingame_stats.puzzle.achievement;
 
-import java.util.Comparator;
 
 import com.google.gson.Gson;
 
-import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import static org.hamcrest.Matchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
