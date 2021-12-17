@@ -32,5 +32,8 @@ public class CodinGame implements InterfaceCodinGame {
         return Arrays.asList(response.getBody());
     }
 
+    List<Integer> getAllPuzzlesID() {
+        return null;
+    }
 
 }

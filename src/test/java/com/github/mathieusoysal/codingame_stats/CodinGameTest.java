@@ -20,24 +20,38 @@ public class CodinGameTest {
     }
 
     @Test
-    void testAllMinifiedPuzzles() {
+    void testGetAllMinifiedPuzzles() {
         CodinGame codinGame = new CodinGame();
         List<MinifiedPuzzle> minifiedPuzzles = codinGame.getAllMinifiedPuzzles();
         assertThat(minifiedPuzzles.size(), greaterThan(0));
     }
 
     @Test
-    void testAllMinifiedPuzzlesNotNull() {
+    void testGetAllMinifiedPuzzlesNotNull() {
         CodinGame codinGame = new CodinGame();
         List<MinifiedPuzzle> minifiedPuzzles = codinGame.getAllMinifiedPuzzles();
         assertThat(minifiedPuzzles, everyItem(notNullValue()));
     }
 
     @Test
-    void testAllMinifiedPuzzlesNotNullId() {
+    void testGetAllMinifiedPuzzlesNotNullId() {
         CodinGame codinGame = new CodinGame();
         List<MinifiedPuzzle> minifiedPuzzles = codinGame.getAllMinifiedPuzzles();
         assertThat(minifiedPuzzles, everyItem(hasProperty("id", notNullValue())));
+    }
+
+    @Test
+    void testGetAllPuzzlesId() {
+        CodinGame codinGame = new CodinGame();
+        List<Integer> puzzlesId = codinGame.getAllPuzzlesID();
+        assertThat(puzzlesId.size(), greaterThan(0));
+    }
+
+    @Test
+    void testGetAllPuzzlesIdEveryItemNotNull() {
+        CodinGame codinGame = new CodinGame();
+        List<Integer> puzzlesId = codinGame.getAllPuzzlesID();
+        assertThat(puzzlesId, everyItem(notNullValue()));
     }
 
 }
