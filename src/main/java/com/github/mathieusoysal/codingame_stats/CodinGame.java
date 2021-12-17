@@ -5,8 +5,13 @@ import com.github.mathieusoysal.codingame_stats.puzzle.Puzzle;
 import com.github.mathieusoysal.codingame_stats.util.CodinGameApi;
 
 import java.util.List;
+import java.util.function.Function;
 
 public class CodinGame implements InterfaceCodinGame {
+    private static final Function<Puzzle, Puzzle> ifPuzzleHasAchievementGetPuzzleWithAchievementInfo = puzzle -> puzzle
+            .getAchiviementCount() > 0
+                    ? CodinGameApi.getPuzzleFromPrettyId(puzzle.getPrettyId())
+                    : puzzle;
 
     @Override
     public void actualise() {
@@ -22,9 +27,7 @@ public class CodinGame implements InterfaceCodinGame {
                 .toList();
         return CodinGameApi.getPuzzles(puzzlesId)
                 .parallelStream()
-                .map(puzzle -> puzzle.getAchiviementCount() > 0
-                        ? CodinGameApi.getPuzzleFromPrettyId(puzzle.getPrettyId())
-                        : puzzle)
+                .map(ifPuzzleHasAchievementGetPuzzleWithAchievementInfo)
                 .toList();
     }
 
