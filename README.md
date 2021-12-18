@@ -1,10 +1,10 @@
+![GitHub Actions](https://github.com/DevLab-umontp/API-JAVA-EDT/workflows/Java%20CI%20with%20Maven/badge.svg)
 
-
-## <img src="https://www.svgrepo.com/show/232495/java.svg" width="100"> CodinGame-Puzzle-stats-library
+## <img src="https://www.svgrepo.com/show/232495/java.svg" width="100"> CodinGame Puzzles stats library[![GitHub](https://img.shields.io/github/license/MathieuSoysal/CodinGame-Puzzles-stats-library)](https://github.com/MathieuSoysal/CodinGame-Puzzles-stats-library/blob/master/LICENSE)
 
 Simple library for interacting with CodinGame's puzzle API.
 
-## How to integrate the CodinGame-Puzzle-Stats-library into your code
+## How to integrate the CodinGame-Puzzles-Stats-library into your code
 
 **Required Java version :** 17
 
@@ -14,19 +14,19 @@ If you have Maven, add the following to the dependencies of your `pom.xml` file:
 
 ```xml
 <dependency>
-  <groupId>com.github.mathieusoysal</groupId>
+  <groupId>io.github.mathieusoysal</groupId>
   <artifactId>CodinGame-Puzzles-Stats</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0</version>
 </dependency>
 ```
 
->*See an example of a [pom.xml](https://github.com/DevLab-umontp/Librarie-Java-EDT/blob/main/ressources/pom.xml#L20L24) file with the EDT IUT Montpellier library*
+>*See an example of a [pom.xml](https://github.com/DevLab-umontp/Librarie-Java-EDT/blob/main/ressources/pom.xml#L20L24) file with the CodinGame-Puzzles-stats-library*
 ### Gradle
 
 If you are using Gradle, add the following to the dependencies of your `build.gradle` file:
 
 ```
-    implementation 'com.github.mathieusoysal:CodinGame-Puzzle-Stats:1.3.1'
+    implementation 'io.github.mathieusoysal:CodinGame-Puzzles-Stats:1.0.0'
 ```
 
 ## Example code for using the CodinGame-Puzzles-Stats library
@@ -90,10 +90,10 @@ public class CodeExemple {
     }
 }
 ```
->*See more [code samples](ressources/ExempleDeCode.java)*
+>*See more [code exemples](ressources/ExempleDeCode.java)*
 ## Contribution
-Suggestions and contributions are always welcome! Please discuss larger changes via an [issue](https://github.com/MathieuSoysal/CodinGame-Puzzle-stats-library/issues) before submitting a request.
+Suggestions and contributions are always welcome! Please discuss larger changes via an [issue](https://github.com/MathieuSoysal/CodinGame-Puzzles-stats-library/issues) before submitting a request.
 
 ## Licence
 
-This project is released under the [GNU General Public License v3.0](https://github.com/MathieuSoysal/CodinGame-Puzzle-stats-library/blob/master/LICENSE)
+This project is released under the [GNU General Public License v3.0](https://github.com/MathieuSoysal/CodinGame-Puzzles-stats-library/blob/master/LICENSE)
