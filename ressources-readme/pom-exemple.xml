@@ -18,8 +18,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.github.mathieusoysal</groupId>
-            <artifactId>CodinGame-Puzzle-stats</artifactId>
+            <groupId>io.github.mathieusoysal</groupId>
+            <artifactId>CodinGame-Puzzles-stats</artifactId>
             <version>1.0.0</version>
         </dependency>
     </dependencies>
