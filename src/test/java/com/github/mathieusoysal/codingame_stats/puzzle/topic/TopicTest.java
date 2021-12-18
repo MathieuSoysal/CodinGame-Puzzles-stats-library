@@ -1,6 +1,7 @@
 package com.github.mathieusoysal.codingame_stats.puzzle.topic;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertSame;
 
 import com.google.gson.Gson;
 
@@ -9,6 +10,15 @@ import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 public class TopicTest {
+
+
+    @Test
+    public void testTopic() {
+        Topic topic = new Topic("handle", "value", null, TopicCategory.FUNDAMENTALS);
+        assertEquals("handle", topic.getHandle());
+        assertEquals("value", topic.getValue());
+        assertSame(TopicCategory.FUNDAMENTALS, topic.getCategory());
+    }
 
     @Nested
     class ConversionFromJsonTest {

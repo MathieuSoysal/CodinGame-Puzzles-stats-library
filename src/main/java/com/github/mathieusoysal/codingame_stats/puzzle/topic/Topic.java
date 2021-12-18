@@ -8,6 +8,10 @@ public class Topic {
         private Set<Topic> children;
         private TopicCategory category;
 
+
+        public Topic(String string, String string2, Object object, TopicCategory fundamentals) {
+        }
+
         public String getHandle() {
             return handle;
         }
