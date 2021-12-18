@@ -6,6 +6,8 @@ Simple library for interacting with CodinGame's puzzle API.
 
 ## How to integrate the CodinGame-Puzzle-Stats-library into your code
 
+**Required Java version :** 17
+
 ### Maven 
 
 If you have Maven, add the following to the dependencies of your `pom.xml` file:
