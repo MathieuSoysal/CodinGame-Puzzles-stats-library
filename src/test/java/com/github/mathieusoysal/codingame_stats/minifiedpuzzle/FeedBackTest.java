@@ -4,10 +4,11 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import com.google.gson.Gson;
 
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 public class FeedBackTest {
@@ -27,17 +28,36 @@ public class FeedBackTest {
         assertEquals(5, feedBack.getNbStarsFor(4));
     }
 
-    @Test
-    void testConversionFromJsonFeedBack() {
-        String json = "{\"feedbackId\":1649,\"feedbacks\":[4,0,1,16,31]}";
-        Feedback feedBack = new Gson().fromJson(json, Feedback.class);
-        assertEquals(1649, feedBack.getFeedbackId());
-    }
+    @Nested
+    class FeedbackConversionFromJsonTest {
+        final static String JSON_FEEDBACK = """
+                    {
+                        \"feedbackId\": 1649,
+                        \"feedbacks\": [
+                            4,
+                            3,
+                            1,
+                            5
+                        ]
+                    }
+                """;
 
-    @Test
-    void testConversionFromJsonFeedBackWithNullAndEmpty() {
-        String json = "{\"feedbackId\":1649,\"feedbacks\":[4,0,1,16,31]}";
-        Feedback feedBack = new Gson().fromJson(json, Feedback.class);
-        assertArrayEquals(new int[] { 4, 0, 1, 16, 31 }, feedBack.getFeedbacks());
+        Feedback feedback;
+
+        @BeforeEach
+        public void setUp() {
+            feedback = new Gson().fromJson(JSON_FEEDBACK, Feedback.class);
+        }
+
+        @Test
+        void testGetFeedbackId() {
+            assertEquals(1649, feedback.getFeedbackId());
+        }
+
+        @Test
+        void testGetFeedbacks() {
+            assertArrayEquals(new int[] { 4, 3, 1, 5 }, feedback.getFeedbacks());
+        }
+
     }
 }
