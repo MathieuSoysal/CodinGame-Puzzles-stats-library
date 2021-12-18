@@ -34,7 +34,7 @@ public class MinifiedPuzzle {
     /**
      * 
      */
-    private int solvedcount;
+    private int solvedCount;
 
     /**
      * 
@@ -63,7 +63,7 @@ public class MinifiedPuzzle {
     }
 
     public int getSolvedcount() {
-        return solvedcount;
+        return solvedCount;
     }
 
     public PuzzleLevel getLevel() {
