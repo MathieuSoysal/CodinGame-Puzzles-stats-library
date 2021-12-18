@@ -64,11 +64,6 @@ public class Puzzle extends MinifiedPuzzle {
     /**
      * 
      */
-    private boolean communityCreation;
-
-    /**
-     * 
-     */
     private TitleMap titleMap;
 
     /**
@@ -144,10 +139,6 @@ public class Puzzle extends MinifiedPuzzle {
 
     public String getDetailsPageUrl() {
         return detailsPageUrl;
-    }
-
-    public boolean isCommunityCreation() {
-        return communityCreation;
     }
 
     public TitleMap getTitleMap() {
