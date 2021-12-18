@@ -20,7 +20,7 @@ public class PuzzleLevelTest {
     }
 
     @Test
-    public void testIsSpecialLevel(){
+    public void testIsSpecialLevel() {
         assertThat(PuzzleLevel.TUTORIAL.isSpecialLevel(), is(true));
         assertThat(PuzzleLevel.EASY.isSpecialLevel(), is(false));
         assertThat(PuzzleLevel.MEDIUM.isSpecialLevel(), is(false));
@@ -30,7 +30,6 @@ public class PuzzleLevelTest {
         assertThat(PuzzleLevel.CODEGOLF.isSpecialLevel(), is(true));
         assertThat(PuzzleLevel.OPTIM.isSpecialLevel(), is(true));
     }
-
 
     @Nested
     class TestConversionFromGson {

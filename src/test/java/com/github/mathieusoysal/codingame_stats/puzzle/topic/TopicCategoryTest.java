@@ -46,7 +46,7 @@ public class TopicCategoryTest {
             TestClassConversion testLevel = new Gson().fromJson(json, TestClassConversion.class);
             assertSame(TopicCategory.ADVANCED, testLevel.category);
         }
-        
+
     }
 
 }

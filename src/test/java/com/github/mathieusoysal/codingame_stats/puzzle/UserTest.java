@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 public class UserTest {
 
     @Nested
-    class HashcodeAndEquals{
+    class HashcodeAndEquals {
 
         @Test
         void testHashcode() {
@@ -29,14 +29,14 @@ public class UserTest {
         }
 
         @Test
-        void testNotEquals(){
+        void testNotEquals() {
             User user1 = new User(1, "pseudo", "publicHandle");
             User user2 = new User(2, "pseudo", "publicHandle");
             assertNotEquals(user1, user2);
         }
 
         @Test
-        void testHashcodeNotEquals(){
+        void testHashcodeNotEquals() {
             User user1 = new User(1, "pseudo", "publicHandle");
             User user2 = new User(2, "pseudo", "publicHandle");
             assertNotEquals(user1.hashCode(), user2.hashCode());

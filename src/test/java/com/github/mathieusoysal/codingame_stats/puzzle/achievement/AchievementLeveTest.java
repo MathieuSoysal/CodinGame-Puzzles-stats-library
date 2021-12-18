@@ -1,6 +1,5 @@
 package com.github.mathieusoysal.codingame_stats.puzzle.achievement;
 
-
 import com.google.gson.Gson;
 
 import org.junit.jupiter.api.Test;

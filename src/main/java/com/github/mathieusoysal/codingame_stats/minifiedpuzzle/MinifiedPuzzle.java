@@ -1,6 +1,5 @@
 package com.github.mathieusoysal.codingame_stats.minifiedpuzzle;
 
-
 /**
  * 
  */

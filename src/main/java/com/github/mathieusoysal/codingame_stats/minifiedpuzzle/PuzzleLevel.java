@@ -23,7 +23,6 @@ public enum PuzzleLevel {
     @SerializedName("optim")
     OPTIM;
 
-
     public boolean isSpecialLevel() {
         return this == TUTORIAL || this == MULTI || this == CODEGOLF || this == OPTIM;
     }
