@@ -1,7 +1,11 @@
 package com.github.mathieusoysal.codingame_stats.puzzle;
 
+import com.github.mathieusoysal.codingame_stats.minifiedpuzzle.PuzzleLevel;
+import com.github.mathieusoysal.codingame_stats.puzzle.topic.TopicCategory;
 import com.google.gson.Gson;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertSame;
 
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
@@ -105,6 +109,152 @@ public class PuzzleTest {
             Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
             assertEquals(50, puzzle.getId());
         }
+
+        @Test
+        void testPropertyLevel() {
+            Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
+            assertSame(PuzzleLevel.MEDIUM, puzzle.getLevel());
+        }
+
+        @Test
+        void testPropertyRank() {
+            Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
+            assertEquals(1, puzzle.getRank());
+        }
+
+        @Test
+        void testPropertyTitle() {
+            Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
+            assertEquals("War", puzzle.getTitle());
+        }
+
+        @Test
+        void testPropertyTitleMap() {
+            Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
+            assertEquals("La Bataille", puzzle.getTitleMap().getName1());
+            assertEquals("War", puzzle.getTitleMap().getName2());
+        }
+
+        @Test
+        void testPropertyDescription() {
+            Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
+            assertEquals(
+                    "<strong>Solve this special challenge and enter Winamax's world</strong>\n<br />\nScore, get contacted, and grab the chance to meet the Winamax tech team.",
+                    puzzle.getDescription());
+        }
+
+        @Test
+        void testPropertyStatement() {
+            Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
+            assertEquals("salut", puzzle.getStatement());
+        }
+
+        @Test
+        void testPropertyValidatorScore() {
+            Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
+            assertEquals(0, puzzle.getValidatorScore());
+        }
+
+        @Test
+        void testPropertyAchievementCount() {
+            Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
+            assertEquals(2, puzzle.getAchiviementCount());
+        }
+
+        @Test
+        void testPropertyDoneAchievementCount() {
+            Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
+            assertEquals(0, puzzle.getDoneAchievementCount());
+        }
+
+        @Test
+        void testPropertyLinkedAchievements() {
+            Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
+            assertEquals(2, puzzle.getLinkedAchievements().size());
+            assertEquals("PZ_50P_P50", puzzle.getLinkedAchievements().get(0).getId());
+            assertEquals("PZ_100P_P50", puzzle.getLinkedAchievements().get(1).getId());
+        }
+
+        @Test
+        void testPropertyForumLink() {
+            Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
+            assertEquals("war-puzzle-discussion/2417", puzzle.getForumLink());
+        }
+
+        @Test
+        void testPropertySolvedCount() {
+            Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
+            assertEquals(18153, puzzle.getSolvedcount());
+        }
+
+        @Test
+        void testPropertyAttemptCount() {
+            Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
+            assertEquals(27674, puzzle.getAttemptCount());
+        }
+
+        @Test
+        void testPropertyXpPoints() {
+            Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
+            assertEquals(100, puzzle.getXpPoint());
+        }
+
+        @Test
+        void testPropertyFeedback() {
+            Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
+            assertEquals(1615, puzzle.getFeedback().getFeedbackId());
+            assertEquals(5, puzzle.getFeedback().getFeedbacks().length);
+            assertEquals(44, puzzle.getFeedback().getFeedbacks()[0]);
+            assertEquals(81, puzzle.getFeedback().getFeedbacks()[1]);
+            assertEquals(155, puzzle.getFeedback().getFeedbacks()[2]);
+            assertEquals(365, puzzle.getFeedback().getFeedbacks()[3]);
+            assertEquals(664, puzzle.getFeedback().getFeedbacks()[4]);
+        }
+
+        @Test
+        void testPropertyTopics() {
+            Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
+            assertEquals(1, puzzle.getTopics().size());
+            assertEquals("data-structures", puzzle.getTopics().get(0).getHandle());
+            assertSame(TopicCategory.FUNDAMENTALS, puzzle.getTopics().get(0).getCategory());
+            assertEquals("Data Structures", puzzle.getTopics().get(0).getValue());
+            assertEquals(1, puzzle.getTopics().get(0).getChildren().size());
+            assertEquals("queues", puzzle.getTopics().get(0).getChildren().get(0).getHandle());
+            assertSame(TopicCategory.FUNDAMENTALS, puzzle.getTopics().get(0).getChildren().get(0).getCategory());
+            assertEquals("Queues", puzzle.getTopics().get(0).getChildren().get(0).getValue());
+            assertEquals(0, puzzle.getTopics().get(0).getChildren().get(0).getChildren().size());
+        }
+
+        @Test
+        void testPropertyDetailsPageUrl() {
+            Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
+            assertEquals("/training/medium/winamax-battle", puzzle.getDetailsPageUrl());
+        }
+
+        @Test
+        void testPropertyPuzzleType() {
+            Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
+            assertSame(PuzzleType.CODE, puzzle.getType());
+        }
+
+        @Test
+        void testPropertyPrettyId() {
+            Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
+            assertEquals("winamax-battle", puzzle.getPrettyId());
+        }
+
+        @Test
+        void testPropertyCommunityCreation() {
+            Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
+            assertFalse(puzzle.isCommunityCreation());
+        }
+
+        @Test
+        void testPropertyCreationTime() {
+            Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
+            assertEquals(1422957376000l, puzzle.getCreationTime());
+        }
+
     }
 
 }
