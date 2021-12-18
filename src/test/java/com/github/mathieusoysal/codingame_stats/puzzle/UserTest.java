@@ -32,17 +32,17 @@ public class UserTest {
 
         @Test
         public void testGetUserId() {
-            assertEquals(155929, user.userId());
+            assertEquals(155929, user.getUserId());
         }
 
         @Test
         public void testGetPseudo() {
-            assertEquals("[CG]jupoulton", user.pseudo());
+            assertEquals("[CG]jupoulton", user.getPseudo());
         }
 
         @Test
         public void testGetPublicHandle() {
-            assertEquals("d39436e9a23b5060ed3efaf1c24b4ba8929551", user.publicHandle());
+            assertEquals("d39436e9a23b5060ed3efaf1c24b4ba8929551", user.getPublicHandle());
         }
 
     }
