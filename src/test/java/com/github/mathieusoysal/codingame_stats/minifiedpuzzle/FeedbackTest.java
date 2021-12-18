@@ -11,12 +11,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-public class FeedBackTest {
+public class FeedbackTest {
 
     @Test
     void testGetMoy() {
-        Feedback feedBack = new Feedback(32, new int[] { 2, 2, 2, 2 });
-        assertThat(feedBack.getMoy(), is(2.0));
+        Feedback feedback = new Feedback(32, new int[] { 2, 2, 2, 2 });
+        assertThat(feedback.getMoy(), is(2.0));
     }
 
     @Test
