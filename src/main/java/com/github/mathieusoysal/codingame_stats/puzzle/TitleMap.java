@@ -1,3 +1,19 @@
 package com.github.mathieusoysal.codingame_stats.puzzle;
 
-public record  TitleMap(String _1,String _2){}
+import com.google.gson.annotations.SerializedName;
+
+public class TitleMap {
+    @SerializedName("1")
+    private String name1;
+
+    @SerializedName("2")
+    private String name2;
+
+    public String getName1() {
+        return name1;
+    }
+
+    public String getName2() {
+        return name2;
+    }
+}

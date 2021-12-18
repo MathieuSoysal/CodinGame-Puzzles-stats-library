@@ -28,12 +28,12 @@ public class TitleMapTest {
 
         @Test
         public void testGet1() {
-            assertEquals("La Bataille", titleMap._1());
+            assertEquals("La Bataille", titleMap.getName1());
         }
 
         @Test
         public void testGet2() {
-            assertEquals("War", titleMap._2());
+            assertEquals("War", titleMap.getName2());
         }
 
     }
