@@ -17,6 +17,10 @@ public class Achievement {
         private double weight;
         private AchievementLevel level;
 
+        public Achievement(String string, int i, String string2, String string3, int j, int k, int l, int m, long n,
+                double d, AchievementLevel silver) {
+        }
+
         public String getId() {
                 return id;
         }
