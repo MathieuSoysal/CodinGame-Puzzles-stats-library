@@ -46,6 +46,11 @@ public class MinifiedPuzzle {
      */
     private Feedback feedback;
 
+    /**
+     * 
+     */
+    private boolean communityCreation;
+
     public int getId() {
         return id;
     }
@@ -78,8 +83,8 @@ public class MinifiedPuzzle {
         return submitted;
     }
 
-    public Object isCommunityCreation() {
-        return null;
+    public boolean isCommunityCreation() {
+        return communityCreation;
     }
 
 }
