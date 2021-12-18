@@ -99,6 +99,21 @@ public class TopicTest {
             assertEquals(1, topic.getChildren().size());
         }
 
+        @Test
+        public void testGetChildrenHandle() {
+            assertEquals("queues", topic.getChildren().get(0).getHandle());
+        }
+
+        @Test
+        public void testGetChildrenCategory() {
+            assertEquals(TopicCategory.FUNDAMENTALS, topic.getChildren().get(0).getCategory());
+        }
+
+        @Test
+        public void testGetChildrenValue() {
+            assertEquals("Queues", topic.getChildren().get(0).getValue());
+        }
+
     }
 
 }
