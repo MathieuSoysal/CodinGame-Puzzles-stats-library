@@ -164,4 +164,8 @@ public class Puzzle extends MinifiedPuzzle {
     public PuzzleType getType() {
         return type;
     }
+
+    public Object getCreatedDate() {
+        return null;
+    }
 }

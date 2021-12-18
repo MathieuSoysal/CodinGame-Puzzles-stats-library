@@ -7,6 +7,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertSame;
 
+import java.util.Date;
+
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
@@ -253,6 +255,12 @@ public class PuzzleTest {
         void testPropertyCreationTime() {
             Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
             assertEquals(1422957376000l, puzzle.getCreationTime());
+        }
+        
+        @Test
+        void testPropertyCreatedDate() {
+            Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
+            assertEquals(new Date(1422957376000l), puzzle.getCreatedDate());
         }
 
     }
