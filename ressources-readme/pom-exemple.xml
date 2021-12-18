@@ -18,7 +18,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.github.MathieuSoysal</groupId>
+            <groupId>com.github.mathieusoysal</groupId>
             <artifactId>CodinGame-Puzzle-stats</artifactId>
             <version>1.0.0</version>
         </dependency>

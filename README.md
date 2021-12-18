@@ -14,7 +14,7 @@ If you have Maven, add the following to the dependencies of your `pom.xml` file:
 
 ```xml
 <dependency>
-  <groupId>com.github.mathieusoysal.codingame_stats</groupId>
+  <groupId>com.github.mathieusoysal</groupId>
   <artifactId>CodinGame-Puzzles-Stats</artifactId>
   <version>1.0-SNAPSHOT</version>
 </dependency>
@@ -26,7 +26,7 @@ If you have Maven, add the following to the dependencies of your `pom.xml` file:
 If you are using Gradle, add the following to the dependencies of your `build.gradle` file:
 
 ```
-    implementation 'com.github.devlab-umontp:edt-iut-umontp:1.3.1'
+    implementation 'com.github.mathieusoysal:CodinGame-Puzzle-Stats:1.3.1'
 ```
 
 ## Example code for using the CodinGame-Puzzles-Stats library
