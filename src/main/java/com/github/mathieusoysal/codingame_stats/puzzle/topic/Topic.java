@@ -1,14 +1,14 @@
 package com.github.mathieusoysal.codingame_stats.puzzle.topic;
 
-import java.util.Set;
+import java.util.List;
 
 public class Topic {
         private String handle;
         private String value;
-        private Set<Topic> children;
+        private List<Topic> children;
         private TopicCategory category;
 
-        Topic(String handle, String value, Set<Topic> children, TopicCategory category) {
+        Topic(String handle, String value, List<Topic> children, TopicCategory category) {
                 this.handle = handle;
                 this.value = value;
                 this.children = children;
@@ -63,7 +63,7 @@ public class Topic {
             return value;
         }
 
-        public Set<Topic> getChildren() {
+        public List<Topic> getChildren() {
             return children;
         }
 
