@@ -38,22 +38,22 @@ public class TopicTest {
 
         @Test
         public void testGetHandle() {
-            assertEquals("data-structures", topic.handle());
+            assertEquals("data-structures", topic.getHandle());
         }
 
         @Test
         public void testGetCategory() {
-            assertEquals(TopicCategory.FUNDAMENTALS, topic.category());
+            assertEquals(TopicCategory.FUNDAMENTALS, topic.getCategory());
         }
 
         @Test
         public void testGetValue() {
-            assertEquals("Data Structures", topic.value());
+            assertEquals("Data Structures", topic.getValue());
         }
 
         @Test
         public void testGetChildren() {
-            assertEquals(1, topic.children().size());
+            assertEquals(1, topic.getChildren().size());
         }
 
     }
