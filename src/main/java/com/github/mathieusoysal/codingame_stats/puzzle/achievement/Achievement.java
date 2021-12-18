@@ -2,6 +2,11 @@ package com.github.mathieusoysal.codingame_stats.puzzle.achievement;
 
 /**
  * 
+ * Achievement class represents CodinGame's achievement.
+ * 
+ * @author Mathieu Soysal
+ * 
+ * @see AchievementLevel
  */
 public class Achievement {
 

@@ -2,6 +2,11 @@ package com.github.mathieusoysal.codingame_stats.puzzle;
 
 import com.google.gson.annotations.SerializedName;
 
+/**
+ * TitleMap is used to represent the titles of a CodinGame's puzzle.
+ * 
+ * @author Mathieu Soysal
+ */
 public class TitleMap {
     @SerializedName("1")
     private String name1;

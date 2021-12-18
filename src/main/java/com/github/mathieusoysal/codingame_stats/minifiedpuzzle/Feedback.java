@@ -4,6 +4,11 @@ import java.util.Arrays;
 import java.util.Objects;
 import java.util.stream.IntStream;
 
+/**
+ * Feedback is feedback from players who have solved the puzzle.
+ * 
+ * @author Mathieu Soysal
+ */
 public class Feedback {
 
     private int feedbackId;
@@ -15,15 +20,15 @@ public class Feedback {
     }
 
     /**
-     * @return
+     * @return The average feedback from users who solved the puzzles.
      */
     public double getMoy() {
         return IntStream.of(feedbacks).sum() / (double) feedbacks.length;
     }
 
     /**
-     * @param numStar
-     * @return
+     * @param numStar : the rate number.
+     * @return The number of people who rated with {@code numStar}.
      */
     public int getNbStarsFor(int numStar) {
         return feedbacks[numStar - 1];

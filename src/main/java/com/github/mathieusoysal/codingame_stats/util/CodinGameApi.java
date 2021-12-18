@@ -11,6 +11,13 @@ import kong.unirest.Cache;
 import kong.unirest.HttpResponse;
 import kong.unirest.Unirest;
 
+/**
+ * CodinGameApi is a class that used to interact with the CodinGame's API.
+ * 
+ * @see Unirest
+ * 
+ * @author Mathieu Soysal
+ */
 public class CodinGameApi {
 
     private CodinGameApi() {

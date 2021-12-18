@@ -4,6 +4,9 @@ import com.google.gson.annotations.SerializedName;
 
 /**
  * 
+ * PuzzleLevel class is used to represent the level of a puzzle.
+ * 
+ * @author Mathieu Soysal
  */
 public enum PuzzleLevel {
     @SerializedName("tutorial")

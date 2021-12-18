@@ -1,5 +1,11 @@
 package com.github.mathieusoysal.codingame_stats.puzzle;
 
+/**
+ * 
+ * User class represents a contributor or a moderator of a CodinGame's puzzle.
+ * 
+ * @author Mathieu Soysal
+ */
 public class User {
     private int userId;
     private String pseudo;

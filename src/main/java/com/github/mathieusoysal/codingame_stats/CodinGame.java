@@ -7,6 +7,13 @@ import com.github.mathieusoysal.codingame_stats.minifiedpuzzle.MinifiedPuzzle;
 import com.github.mathieusoysal.codingame_stats.puzzle.Puzzle;
 import com.github.mathieusoysal.codingame_stats.util.CodinGameApi;
 
+/**
+ * The class to get all Puzzles from CodinGame's API.
+ * 
+ * @see Puzzle
+ * 
+ * @author Mathieu Soysal
+ */
 public class CodinGame {
         private static final UnaryOperator<Puzzle> ifPuzzleHasAchievementGetPuzzleWithAchievementInfo = puzzle -> puzzle
                         .getAchievementCount() > 0

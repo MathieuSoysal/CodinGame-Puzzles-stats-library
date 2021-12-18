@@ -2,6 +2,14 @@ package com.github.mathieusoysal.codingame_stats.puzzle.topic;
 
 import java.util.List;
 
+/**
+ * 
+ * Topic class represents a topic of in a puzzle.
+ * 
+ * @author Mathieu Soysal
+ * 
+ * @see TopicCategory
+ */
 public class Topic {
     private String handle;
     private String value;
