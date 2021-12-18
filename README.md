@@ -90,7 +90,7 @@ public class CodeExemple {
 ```
 >*See more [code samples](ressources/ExempleDeCode.java)*
 ## Contribution
-Suggestions and contributions are always welcome! Please discuss larger changes via an [issue](https://TODO) before submitting a request.
+Suggestions and contributions are always welcome! Please discuss larger changes via an [issue](https://github.com/MathieuSoysal/CodinGame-Puzzle-stats-library/issues) before submitting a request.
 
 ## Licence
 
