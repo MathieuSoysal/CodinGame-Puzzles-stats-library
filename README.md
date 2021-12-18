@@ -1,4 +1,4 @@
-
+![GitHub Actions](https://github.com/DevLab-umontp/API-JAVA-EDT/workflows/Java%20CI%20with%20Maven/badge.svg)
 
 ## <img src="https://www.svgrepo.com/show/232495/java.svg" width="100"> CodinGame Puzzle stats library[![GitHub](https://img.shields.io/github/license/MathieuSoysal/CodinGame-Puzzle-stats-library)](https://github.com/MathieuSoysal/CodinGame-Puzzle-stats-library/blob/master/LICENSE)
 
