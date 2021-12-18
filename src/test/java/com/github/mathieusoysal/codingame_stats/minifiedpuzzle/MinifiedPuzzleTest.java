@@ -94,7 +94,7 @@ public class MinifiedPuzzleTest {
 
         @Test
         void testPropertyCreatedDate() {
-            assertEquals(new Date(1422957376000l), minifiedPuzzle.getCreatedDate());
+            assertEquals(new Date(1482243976674l), minifiedPuzzle.getCreatedDate());
         }
 
     }
