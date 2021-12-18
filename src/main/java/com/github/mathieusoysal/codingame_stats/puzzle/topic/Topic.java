@@ -8,8 +8,11 @@ public class Topic {
         private Set<Topic> children;
         private TopicCategory category;
 
-
-        public Topic(String string, String string2, Object object, TopicCategory fundamentals) {
+        public Topic(String handle, String value, Set<Topic> children, TopicCategory category) {
+                this.handle = handle;
+                this.value = value;
+                this.children = children;
+                this.category = category;
         }
 
         public String getHandle() {
