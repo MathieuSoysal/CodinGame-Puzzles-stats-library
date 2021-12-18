@@ -78,4 +78,8 @@ public class MinifiedPuzzle {
         return submitted;
     }
 
+    public Object isCommunityCreation() {
+        return null;
+    }
+
 }
