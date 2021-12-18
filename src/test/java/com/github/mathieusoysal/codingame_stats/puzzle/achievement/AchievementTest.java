@@ -29,5 +29,64 @@ public class AchievementTest {
         assertEquals("PZ_50P_P50", achievement.getId());
     }
 
-    
+    @Test
+    void testGetPuzzleId() {
+        Achievement achievement = new Gson().fromJson(json, Achievement.class);
+        assertEquals(50, achievement.getPuzzleId());
+    }
+
+    @Test
+    void testGetTitle() {
+        Achievement achievement = new Gson().fromJson(json, Achievement.class);
+        assertEquals("50% War", achievement.getTitle());
+    }
+
+    @Test
+    void testGetDescription() {
+        Achievement achievement = new Gson().fromJson(json, Achievement.class);
+        assertEquals("Reach a 50% score on War.", achievement.getDescription());
+    }
+
+    @Test
+    void testGetPoints() {
+        Achievement achievement = new Gson().fromJson(json, Achievement.class);
+        assertEquals(50, achievement.getPoints());
+    }
+
+    @Test
+    void testGetProgress() {
+        Achievement achievement = new Gson().fromJson(json, Achievement.class);
+        assertEquals(0, achievement.getProgress());
+    }
+
+    @Test
+    void testGetProgressMax() {
+        Achievement achievement = new Gson().fromJson(json, Achievement.class);
+        assertEquals(1, achievement.getProgressMax());
+    }
+
+    @Test
+    void testGetCompletionTime() {
+        Achievement achievement = new Gson().fromJson(json, Achievement.class);
+        assertEquals(0, achievement.getCompletionTime());
+    }
+
+    @Test
+    void testGetImageBinaryId() {
+        Achievement achievement = new Gson().fromJson(json, Achievement.class);
+        assertEquals(1924507038929L, achievement.getImageBinaryId());
+    }
+
+    @Test
+    void testGetLevel() {
+        Achievement achievement = new Gson().fromJson(json, Achievement.class);
+        assertEquals(AchievementLevel.SILVER, achievement.getLevel());
+    }
+
+    @Test
+    void testGetWeight() {
+        Achievement achievement = new Gson().fromJson(json, Achievement.class);
+        assertEquals(7000.0, achievement.getWeight());
+    }
+
 }
