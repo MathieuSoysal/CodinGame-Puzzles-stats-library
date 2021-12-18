@@ -94,4 +94,4 @@ Suggestions and contributions are always welcome! Please discuss larger changes 
 
 ## Licence
 
-This project is released under the [Academic Free License 3.0](https://TODO)
+This project is released under the [GNU General Public License v3.0](https://github.com/MathieuSoysal/CodinGame-Puzzle-stats-library/blob/master/LICENSE)
