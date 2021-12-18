@@ -3,16 +3,62 @@ package com.github.mathieusoysal.codingame_stats.puzzle.achievement;
 /**
  * 
  */
-public record Achievement(
-        String id,
-        int puzzleId,
-        String title,
-        String description,
-        int points,
-        int progress,
-        int progressMax,
-        int completionTime,
-        long imageBinaryId,
-        double weight,
-        AchievementLevel level) {
+public class Achievement {
+
+        private String id;
+        private int puzzleId;
+        private String title;
+        private String description;
+        private int points;
+        private int progress;
+        private int progressMax;
+        private int completionTime;
+        private long imageBinaryId;
+        private double weight;
+        private AchievementLevel level;
+
+        public String getId() {
+                return id;
+        }
+
+        public int getPuzzleId() {
+                return puzzleId;
+        }
+
+        public String getTitle() {
+                return title;
+        }
+
+        public String getDescription() {
+                return description;
+        }
+
+        public int getPoints() {
+                return points;
+        }
+
+        public int getProgress() {
+                return progress;
+        }
+
+        public int getProgressMax() {
+                return progressMax;
+        }
+
+        public int getCompletionTime() {
+                return completionTime;
+        }
+
+        public long getImageBinaryId() {
+                return imageBinaryId;
+        }
+
+        public double getWeight() {
+                return weight;
+        }
+
+        public AchievementLevel getLevel() {
+                return level;
+        }
+
 }
