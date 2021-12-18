@@ -1,5 +1,7 @@
 package com.github.mathieusoysal.codingame_stats.minifiedpuzzle;
 
+import java.util.Date;
+
 /**
  * 
  */
@@ -86,8 +88,8 @@ public class MinifiedPuzzle {
         return communityCreation;
     }
 
-    public Object getCreatedDate() {
-        return null;
+    public Date getCreatedDate() {
+        return new Date(creationTime);
     }
 
 }
