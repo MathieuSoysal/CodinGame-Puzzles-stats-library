@@ -9,7 +9,7 @@ import java.util.function.UnaryOperator;
 
 public class CodinGame {
     private static final UnaryOperator<Puzzle> ifPuzzleHasAchievementGetPuzzleWithAchievementInfo = puzzle -> puzzle
-            .getAchiviementCount() > 0
+            .getAchievementCount() > 0
                     ? CodinGameApi.getPuzzleFromPrettyId(puzzle.getPrettyId())
                     : puzzle;
 

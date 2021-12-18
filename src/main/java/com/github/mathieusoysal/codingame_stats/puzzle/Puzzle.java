@@ -29,7 +29,7 @@ public class Puzzle extends MinifiedPuzzle {
     /**
      * 
      */
-    private int achiviementCount;
+    private int achievementCount;
 
     /**
      * 
@@ -118,8 +118,8 @@ public class Puzzle extends MinifiedPuzzle {
         return statement;
     }
 
-    public int getAchiviementCount() {
-        return achiviementCount;
+    public int getAchievementCount() {
+        return achievementCount;
     }
 
     public int getDoneAchievementCount() {

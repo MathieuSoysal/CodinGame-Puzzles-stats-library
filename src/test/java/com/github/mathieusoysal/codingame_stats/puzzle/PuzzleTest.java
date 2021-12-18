@@ -158,7 +158,7 @@ public class PuzzleTest {
         @Test
         void testPropertyAchievementCount() {
             Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
-            assertEquals(2, puzzle.getAchiviementCount());
+            assertEquals(2, puzzle.getAchievementCount());
         }
 
         @Test
