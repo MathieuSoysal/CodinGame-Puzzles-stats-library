@@ -18,7 +18,7 @@ public class MinifiedPuzzle {
     private int id;
 
     /**
-     * The validatorScore of the puzzle. 
+     * The validatorScore of the puzzle.
      */
     private int validatorScore;
 
@@ -44,6 +44,7 @@ public class MinifiedPuzzle {
 
     /**
      * The level of the puzzle.
+     * 
      * @see com.github.mathieusoysal.codingame_stats.minifiedpuzzle.PuzzleLevel
      */
     private PuzzleLevel level;

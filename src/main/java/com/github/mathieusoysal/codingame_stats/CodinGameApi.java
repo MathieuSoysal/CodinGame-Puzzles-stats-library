@@ -18,7 +18,7 @@ import kong.unirest.Unirest;
  * 
  * @author Mathieu Soysal
  */
- class CodinGameApi {
+class CodinGameApi {
 
     private CodinGameApi() {
         throw new IllegalStateException("Utility class");
