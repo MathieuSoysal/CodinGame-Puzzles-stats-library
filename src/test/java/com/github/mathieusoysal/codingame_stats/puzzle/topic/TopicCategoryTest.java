@@ -9,20 +9,20 @@ import com.google.gson.Gson;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-public class CategoryTest {
+public class TopicCategoryTest {
 
     @Test
     public void testComparator() {
-        assertThat(Category.FUNDAMENTALS, lessThan(Category.ADVANCED));
-        assertThat(Category.FUNDAMENTALS, lessThan(Category.INTERMEDIATE));
-        assertThat(Category.INTERMEDIATE, lessThan(Category.ADVANCED));
+        assertThat(TopicCategory.FUNDAMENTALS, lessThan(TopicCategory.ADVANCED));
+        assertThat(TopicCategory.FUNDAMENTALS, lessThan(TopicCategory.INTERMEDIATE));
+        assertThat(TopicCategory.INTERMEDIATE, lessThan(TopicCategory.ADVANCED));
     }
 
     @Nested
     class TestConversionFromJson {
         private class TestClassConversion {
 
-            public Category category;
+            public TopicCategory category;
 
         }
 
@@ -30,21 +30,21 @@ public class CategoryTest {
         public void testConversionWithFundamentals() {
             String json = "{\"category\":\"FUNDAMENTALS\"}";
             TestClassConversion testLevel = new Gson().fromJson(json, TestClassConversion.class);
-            assertSame(Category.FUNDAMENTALS, testLevel.category);
+            assertSame(TopicCategory.FUNDAMENTALS, testLevel.category);
         }
 
         @Test
         public void testConversionWithIntermediate() {
             String json = "{\"category\":\"INTERMEDIATE\"}";
             TestClassConversion testLevel = new Gson().fromJson(json, TestClassConversion.class);
-            assertSame(Category.INTERMEDIATE, testLevel.category);
+            assertSame(TopicCategory.INTERMEDIATE, testLevel.category);
         }
 
         @Test
         public void testConversionWithAdvanced() {
             String json = "{\"category\":\"ADVANCED\"}";
             TestClassConversion testLevel = new Gson().fromJson(json, TestClassConversion.class);
-            assertSame(Category.ADVANCED, testLevel.category);
+            assertSame(TopicCategory.ADVANCED, testLevel.category);
         }
         
     }

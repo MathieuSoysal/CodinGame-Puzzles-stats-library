@@ -6,5 +6,5 @@ public record Topic(
         String handle,
         String value,
         Set<Topic> children,
-        Category category) {
+        TopicCategory category) {
 }

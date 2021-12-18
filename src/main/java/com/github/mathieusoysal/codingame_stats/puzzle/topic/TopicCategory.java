@@ -3,7 +3,7 @@ package com.github.mathieusoysal.codingame_stats.puzzle.topic;
 /**
  * 
  */
-public enum Category {
+public enum TopicCategory {
     FUNDAMENTALS,
     INTERMEDIATE,
     ADVANCED
