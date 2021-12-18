@@ -50,10 +50,16 @@ public class TitleMap {
         return true;
     }
 
+    /**
+     * @return the name of the first title
+     */
     public String getName1() {
         return name1;
     }
 
+    /**
+     * @return the name of the second title
+     */
     public String getName2() {
         return name2;
     }

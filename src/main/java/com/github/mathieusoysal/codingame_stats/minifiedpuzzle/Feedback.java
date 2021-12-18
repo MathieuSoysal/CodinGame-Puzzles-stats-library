@@ -57,10 +57,16 @@ public class Feedback {
         return Objects.hash(feedbackId);
     }
 
+    /**
+     * @return The feedback id.
+     */
     public int getFeedbackId() {
         return feedbackId;
     }
 
+    /**
+     * @return The feedbacks.
+     */
     public int[] getFeedbacks() {
         return feedbacks;
     }

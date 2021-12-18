@@ -6,7 +6,18 @@ package com.github.mathieusoysal.codingame_stats.puzzle.topic;
  * 
  */
 public enum TopicCategory {
+    /**
+     * The FUNDAMENTALS category of topic.
+     */
     FUNDAMENTALS,
+
+    /**
+     * The INTERMEDIATE category of topic.
+     */
     INTERMEDIATE,
+
+    /**
+     * The ADVANCED category of topic.
+     */
     ADVANCED
 }

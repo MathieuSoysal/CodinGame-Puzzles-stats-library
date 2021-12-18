@@ -5,7 +5,6 @@ import java.util.function.UnaryOperator;
 
 import com.github.mathieusoysal.codingame_stats.minifiedpuzzle.MinifiedPuzzle;
 import com.github.mathieusoysal.codingame_stats.puzzle.Puzzle;
-import com.github.mathieusoysal.codingame_stats.util.CodinGameApi;
 
 /**
  * The class to get all Puzzles from CodinGame's API.
@@ -20,6 +19,11 @@ public class CodinGame {
                                         ? CodinGameApi.getPuzzleFromPrettyId(puzzle.getPrettyId())
                                         : puzzle;
 
+        /**
+         * Get all puzzles from CodinGame's API.
+         * 
+         * @return A list of all puzzles.
+         */
         public List<Puzzle> getPuzzles() {
                 List<Integer> puzzlesId = CodinGameApi
                                 .getAllMinifiedPuzzles()

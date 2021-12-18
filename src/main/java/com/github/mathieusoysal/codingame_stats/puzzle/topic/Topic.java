@@ -57,18 +57,32 @@ public class Topic {
         return true;
     }
 
+    /**
+     * @return The handle of the topic.
+     */
     public String getHandle() {
         return handle;
     }
 
+    /**
+     * @return The value of the topic.
+     */
     public String getValue() {
         return value;
     }
 
+    /**
+     * @return The children(s) of the topic.
+     * @see List
+     */
     public List<Topic> getChildren() {
         return children;
     }
 
+    /**
+     * @return The category of the topic.
+     * @see TopicCategory
+     */
     public TopicCategory getCategory() {
         return category;
     }

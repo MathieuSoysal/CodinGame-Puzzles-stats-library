@@ -11,7 +11,7 @@ public class User {
     private String pseudo;
     private String publicHandle;
 
-    public User(int userId, String pseudo, String publicHandle) {
+    User(int userId, String pseudo, String publicHandle) {
         this.userId = userId;
         this.pseudo = pseudo;
         this.publicHandle = publicHandle;
@@ -39,14 +39,23 @@ public class User {
         return true;
     }
 
+    /**
+     * @return the userId
+     */
     public int getUserId() {
         return userId;
     }
 
+    /**
+     * @return the pseudo
+     */
     public String getPseudo() {
         return pseudo;
     }
 
+    /**
+     * @return the publicHandle
+     */
     public String getPublicHandle() {
         return publicHandle;
     }

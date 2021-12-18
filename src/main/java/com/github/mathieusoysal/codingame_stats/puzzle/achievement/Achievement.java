@@ -63,46 +63,80 @@ public class Achievement {
                 return true;
         }
 
+        /**
+         * @return The id of the achievement.
+         */
         public String getId() {
                 return id;
         }
 
+        /**
+         * @return The id of the puzzle.
+         */
         public int getPuzzleId() {
                 return puzzleId;
         }
 
+        /**
+         * @return The title of the achievement.
+         */
         public String getTitle() {
                 return title;
         }
 
+        /**
+         * @return The description of the achievement.
+         */
         public String getDescription() {
                 return description;
         }
 
+        /**
+         * @return The points of the achievement.
+         */
         public int getPoints() {
                 return points;
         }
 
+        /**
+         * @return The progress of the achievement.
+         */
         public int getProgress() {
                 return progress;
         }
 
+        /**
+         * @return The progress max of the achievement.
+         */
         public int getProgressMax() {
                 return progressMax;
         }
 
+        /**
+         * @return The completion time of the achievement.
+         */
         public int getCompletionTime() {
                 return completionTime;
         }
 
+        /**
+         * @return The image binary id of the achievement.
+         */
         public long getImageBinaryId() {
                 return imageBinaryId;
         }
 
+        /**
+         * @return The weight of the achievement.
+         */
         public double getWeight() {
                 return weight;
         }
 
+        /**
+         * @return The level of the achievement.
+         * @see AchievementLevel
+         */
         public AchievementLevel getLevel() {
                 return level;
         }
