@@ -96,6 +96,16 @@ public class Puzzle extends MinifiedPuzzle {
      */
     private PuzzleType type;
 
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
     public String getTitle() {
         return title;
     }
