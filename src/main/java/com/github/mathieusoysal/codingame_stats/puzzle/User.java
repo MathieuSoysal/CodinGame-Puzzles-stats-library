@@ -5,6 +5,9 @@ public class User {
     private String pseudo;
     private String publicHandle;
 
+    public User(int userId, String pseudo, String publicHandle) {
+    }
+
     public int getUserId() {
         return userId;
     }

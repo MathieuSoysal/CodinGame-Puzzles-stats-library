@@ -1,6 +1,7 @@
 package com.github.mathieusoysal.codingame_stats.puzzle;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 import com.google.gson.Gson;
 
@@ -9,6 +10,39 @@ import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 public class UserTest {
+
+    @Nested
+    class HashcodeAndEquals{
+
+        @Test
+        void testHashcode() {
+            User user1 = new User(1, "pseudo", "publicHandle");
+            User user2 = new User(1, "pseudod", "publicHandled");
+            assertEquals(user1.hashCode(), user2.hashCode());
+        }
+
+        @Test
+        void testEquals() {
+            User user1 = new User(1, "pseudo", "publicHandle");
+            User user2 = new User(1, "pseudod", "publicHandled");
+            assertEquals(user1, user2);
+        }
+
+        @Test
+        void testNotEquals(){
+            User user1 = new User(1, "pseudo", "publicHandle");
+            User user2 = new User(2, "pseudo", "publicHandle");
+            assertNotEquals(user1, user2);
+        }
+
+        @Test
+        void testHashcodeNotEquals(){
+            User user1 = new User(1, "pseudo", "publicHandle");
+            User user2 = new User(2, "pseudo", "publicHandle");
+            assertNotEquals(user1.hashCode(), user2.hashCode());
+        }
+
+    }
 
     @Nested
     class ConversionFromJsonTest {
