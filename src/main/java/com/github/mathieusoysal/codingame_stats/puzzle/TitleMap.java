@@ -9,6 +9,9 @@ public class TitleMap {
     @SerializedName("2")
     private String name2;
 
+    public TitleMap(String string, String string2) {
+    }
+
     public String getName1() {
         return name1;
     }
