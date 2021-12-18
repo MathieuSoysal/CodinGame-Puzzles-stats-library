@@ -79,17 +79,17 @@ public class Puzzle extends MinifiedPuzzle {
     /**
      * 
      */
-    private User moderators;
+    private List<User> moderators;
 
     /**
      * 
      */
-    private Set<Topic> topics;
+    private List<Topic> topics;
 
     /**
      * 
      */
-    private Set<Achievement> linkedAchievements;
+    private List<Achievement> linkedAchievements;
 
     /**
      * 
@@ -148,15 +148,15 @@ public class Puzzle extends MinifiedPuzzle {
         return contributor;
     }
 
-    public User getModerators() {
+    public List<User> getModerators() {
         return moderators;
     }
 
-    public Set<Topic> getTopics() {
+    public List<Topic> getTopics() {
         return topics;
     }
 
-    public Set<Achievement> getLinkedAchievements() {
+    public List<Achievement> getLinkedAchievements() {
         return linkedAchievements;
     }
 
