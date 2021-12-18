@@ -1,4 +1,4 @@
-package com.github.mathieusoysal.codingame_stats.util;
+package com.github.mathieusoysal.codingame_stats;
 
 import java.util.Arrays;
 import java.util.List;
@@ -18,7 +18,7 @@ import kong.unirest.Unirest;
  * 
  * @author Mathieu Soysal
  */
-public class CodinGameApi {
+ class CodinGameApi {
 
     private CodinGameApi() {
         throw new IllegalStateException("Utility class");
@@ -32,7 +32,7 @@ public class CodinGameApi {
                 .enableCookieManagement(false);
     }
 
-    public static List<Puzzle> getPuzzles(List<Integer> puzzleIds) {
+    static List<Puzzle> getPuzzles(List<Integer> puzzleIds) {
         HttpResponse<Puzzle[]> response = Unirest
                 .post("https://www.codingame.com/services/Puzzle/findProgressByIds")
                 .header("Content-Type", "text/plain")
@@ -41,7 +41,7 @@ public class CodinGameApi {
         return Arrays.asList(response.getBody());
     }
 
-    public static Puzzle getPuzzleFromPrettyId(String puzzlePrettyId) {
+    static Puzzle getPuzzleFromPrettyId(String puzzlePrettyId) {
         HttpResponse<Puzzle> response = Unirest.post("https://www.codingame.com/services/Puzzle/findProgressByPrettyId")
                 .header("Content-Type", "text/plain")
                 .body(String.format("[\"%s\", null]", puzzlePrettyId))
@@ -49,7 +49,7 @@ public class CodinGameApi {
         return response.getBody();
     }
 
-    public static List<MinifiedPuzzle> getAllMinifiedPuzzles() {
+    static List<MinifiedPuzzle> getAllMinifiedPuzzles() {
         HttpResponse<MinifiedPuzzle[]> response = Unirest
                 .post("https://www.codingame.com/services/Puzzle/findAllMinimalProgress")
                 .header("Content-Type", "application/javascript")

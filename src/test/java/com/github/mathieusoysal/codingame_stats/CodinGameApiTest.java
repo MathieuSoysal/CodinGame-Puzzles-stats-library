@@ -1,5 +1,6 @@
-package com.github.mathieusoysal.codingame_stats.util;
+package com.github.mathieusoysal.codingame_stats;
 
+import com.github.mathieusoysal.codingame_stats.CodinGameApi;
 import com.github.mathieusoysal.codingame_stats.minifiedpuzzle.MinifiedPuzzle;
 import java.util.List;
 import static org.hamcrest.MatcherAssert.assertThat;
