@@ -10,7 +10,7 @@
 
   <name>CodinGame Puzzles Stats</name>
   <description>Library for interacting with CodinGame's puzzle API.</description>
-  <url>https://github.com/MathieuSoysal/CodinGame-Puzzle-stats-library</url>
+  <url>https://github.com/MathieuSoysal/CodinGame-Puzzles-stats-library</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -48,7 +48,7 @@
   <licenses>
     <license>
       <name>GNU General Public License v3.0</name>
-      <url>https://github.com/MathieuSoysal/CodinGame-Puzzle-stats-library/blob/master/LICENSE</url>
+      <url>https://github.com/MathieuSoysal/CodinGame-Puzzles-stats-library/blob/master/LICENSE</url>
     </license>
   </licenses>
 
@@ -64,13 +64,13 @@
 
   <issueManagement>
     <system>github</system>
-    <url>https://github.com/MathieuSoysal/CodinGame-Puzzle-stats-library/issues</url>
+    <url>https://github.com/MathieuSoysal/CodinGame-Puzzles-stats-library/issues</url>
   </issueManagement>
 
   <scm>
-    <connection>scm:git:git://github.com/MathieuSoysal/CodinGame-Puzzle-stats.git</connection>
-    <developerConnection>scm:git:ssh://github.com:MathieuSoysal/CodinGame-Puzzle-stats.git</developerConnection>
-    <url>http://github.com/MathieuSoysal/CodinGame-Puzzle-stats</url>
+    <connection>scm:git:git://github.com/MathieuSoysal/CodinGame-Puzzles-stats.git</connection>
+    <developerConnection>scm:git:ssh://github.com:MathieuSoysal/CodinGame-Puzzles-stats.git</developerConnection>
+    <url>http://github.com/MathieuSoysal/CodinGame-Puzzles-stats</url>
   </scm>
 
   <profiles>
@@ -83,12 +83,12 @@
         <snapshotRepository>
           <id>ossrh</id>
           <name>Central Repository OSSRH</name>
-          <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+          <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
         <repository>
           <id>ossrh</id>
           <name>Central Repository OSSRH</name>
-          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+          <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
       </distributionManagement>
 
@@ -101,7 +101,7 @@
             <extensions>true</extensions>
             <configuration>
               <serverId>ossrh</serverId>
-              <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+              <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
               <autoReleaseAfterClose>true</autoReleaseAfterClose>
             </configuration>
           </plugin>
@@ -162,7 +162,7 @@
         <repository>
           <id>github</id>
           <name>GitHub MathieuSoysal Apache Maven Packages</name>
-          <url>https://maven.pkg.github.com/MathieuSoysal/CodinGame-Puzzle-stats</url>
+          <url>https://maven.pkg.github.com/MathieuSoysal/CodinGame-Puzzles-stats</url>
         </repository>
       </distributionManagement>
     </profile>
