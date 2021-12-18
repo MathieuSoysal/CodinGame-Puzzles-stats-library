@@ -1,17 +1,10 @@
 package com.github.mathieusoysal.codingame_stats.minifiedpuzzle;
 
-import java.util.*;
 
 /**
  * 
  */
 public class MinifiedPuzzle {
-
-    /**
-     * Default constructor
-     */
-    public MinifiedPuzzle() {
-    }
 
     /**
      * 

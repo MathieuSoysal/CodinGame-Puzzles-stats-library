@@ -11,15 +11,6 @@ import org.junit.jupiter.api.Nested;
 public class AchievementLeveTest {
 
     @Test
-    public void test() {
-        AchievementLevel[] levels = AchievementLevel.values();
-        assert levels.length == 3;
-        assert levels[0] == AchievementLevel.BRONZE;
-        assert levels[1] == AchievementLevel.SILVER;
-        assert levels[2] == AchievementLevel.GOLD;
-    }
-
-    @Test
     public void testComparator() {
         assertThat(AchievementLevel.BRONZE, lessThan(AchievementLevel.SILVER));
         assertThat(AchievementLevel.BRONZE, lessThan(AchievementLevel.GOLD));

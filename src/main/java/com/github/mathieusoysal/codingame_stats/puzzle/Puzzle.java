@@ -12,12 +12,6 @@ import com.github.mathieusoysal.codingame_stats.puzzle.topic.Topic;
 public class Puzzle extends MinifiedPuzzle {
 
     /**
-     * Default constructor
-     */
-    public Puzzle() {
-    }
-
-    /**
      * 
      */
     private String title;
