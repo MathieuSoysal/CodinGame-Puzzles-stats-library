@@ -2,6 +2,7 @@ package com.github.mathieusoysal.codingame_stats.minifiedpuzzle;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertSame;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.google.gson.Gson;
 
@@ -80,7 +81,7 @@ public class MinifiedPuzzleTest {
 
         @Test
         void testIsCommunityCreation() {
-            assertEquals(true, minifiedPuzzle.isCommunityCreation());
+            assertTrue(minifiedPuzzle.isCommunityCreation());
         }
 
         @Test
