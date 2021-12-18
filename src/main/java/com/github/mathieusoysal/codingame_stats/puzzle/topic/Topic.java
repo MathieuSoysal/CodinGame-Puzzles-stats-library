@@ -8,7 +8,7 @@ public class Topic {
         private Set<Topic> children;
         private TopicCategory category;
 
-        public Topic(String handle, String value, Set<Topic> children, TopicCategory category) {
+        Topic(String handle, String value, Set<Topic> children, TopicCategory category) {
                 this.handle = handle;
                 this.value = value;
                 this.children = children;

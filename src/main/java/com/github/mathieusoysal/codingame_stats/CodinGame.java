@@ -5,10 +5,10 @@ import com.github.mathieusoysal.codingame_stats.puzzle.Puzzle;
 import com.github.mathieusoysal.codingame_stats.util.CodinGameApi;
 
 import java.util.List;
-import java.util.function.Function;
+import java.util.function.UnaryOperator;
 
 public class CodinGame {
-    private static final Function<Puzzle, Puzzle> ifPuzzleHasAchievementGetPuzzleWithAchievementInfo = puzzle -> puzzle
+    private static final UnaryOperator<Puzzle> ifPuzzleHasAchievementGetPuzzleWithAchievementInfo = puzzle -> puzzle
             .getAchiviementCount() > 0
                     ? CodinGameApi.getPuzzleFromPrettyId(puzzle.getPrettyId())
                     : puzzle;

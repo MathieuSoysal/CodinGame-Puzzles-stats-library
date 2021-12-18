@@ -9,7 +9,7 @@ public class Feedback {
     private int feedbackId;
     private int[] feedbacks;
 
-    public Feedback(int feedbackId, int[] feedbacks) {
+    Feedback(int feedbackId, int[] feedbacks) {
         this.feedbackId = feedbackId;
         this.feedbacks = feedbacks;
     }
