@@ -1,6 +1,6 @@
 package com.github.mathieusoysal.codingame_stats.puzzle;
 
-import java.util.*;
+import java.util.List;
 
 import com.github.mathieusoysal.codingame_stats.minifiedpuzzle.MinifiedPuzzle;
 import com.github.mathieusoysal.codingame_stats.puzzle.achievement.Achievement;

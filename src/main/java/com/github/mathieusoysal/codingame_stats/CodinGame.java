@@ -1,11 +1,11 @@
 package com.github.mathieusoysal.codingame_stats;
 
+import java.util.List;
+import java.util.function.UnaryOperator;
+
 import com.github.mathieusoysal.codingame_stats.minifiedpuzzle.MinifiedPuzzle;
 import com.github.mathieusoysal.codingame_stats.puzzle.Puzzle;
 import com.github.mathieusoysal.codingame_stats.util.CodinGameApi;
-
-import java.util.List;
-import java.util.function.UnaryOperator;
 
 public class CodinGame {
         private static final UnaryOperator<Puzzle> ifPuzzleHasAchievementGetPuzzleWithAchievementInfo = puzzle -> puzzle
