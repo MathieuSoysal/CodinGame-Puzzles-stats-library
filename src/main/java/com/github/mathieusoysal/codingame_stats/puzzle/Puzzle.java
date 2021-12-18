@@ -49,7 +49,7 @@ public class Puzzle extends MinifiedPuzzle {
     /**
      * 
      */
-    private int xpPoint;
+    private int xpPoints;
 
     /**
      * 
@@ -129,8 +129,8 @@ public class Puzzle extends MinifiedPuzzle {
         return attemptCount;
     }
 
-    public int getXpPoint() {
-        return xpPoint;
+    public int getXpPoints() {
+        return xpPoints;
     }
 
     public String getPrettyId() {

@@ -196,7 +196,7 @@ public class PuzzleTest {
         @Test
         void testPropertyXpPoints() {
             Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
-            assertEquals(100, puzzle.getXpPoint());
+            assertEquals(100, puzzle.getXpPoints());
         }
 
         @Test
