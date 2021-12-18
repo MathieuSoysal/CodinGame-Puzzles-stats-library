@@ -2,9 +2,11 @@
 
 ## <img src="https://www.svgrepo.com/show/232495/java.svg" width="100"> CodinGame-Puzzle-stats-library
 
-Simple library to interact with CodinGame puzzle API.
+Simple library for interacting with CodinGame's puzzle API.
 
 ## How to integrate the CodinGame-Puzzle-Stats-library into your code
+
+**Required Java version :** 17
 
 ### Maven 
 
@@ -90,8 +92,8 @@ public class CodeExemple {
 ```
 >*See more [code samples](ressources/ExempleDeCode.java)*
 ## Contribution
-Suggestions and contributions are always welcome! Please discuss larger changes via an [issue](https://TODO) before submitting a request.
+Suggestions and contributions are always welcome! Please discuss larger changes via an [issue](https://github.com/MathieuSoysal/CodinGame-Puzzle-stats-library/issues) before submitting a request.
 
 ## Licence
 
-This project is released under the [Academic Free License 3.0](https://TODO)
+This project is released under the [GNU General Public License v3.0](https://github.com/MathieuSoysal/CodinGame-Puzzle-stats-library/blob/master/LICENSE)
