@@ -1,6 +1,6 @@
 
 
-## <img src="https://www.svgrepo.com/show/232495/java.svg" width="100"> CodinGame-Puzzle-stats-library
+## <img src="https://www.svgrepo.com/show/232495/java.svg" width="100"> CodinGame Puzzle stats library
 
 Simple library for interacting with CodinGame's puzzle API.
 
