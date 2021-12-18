@@ -4,6 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertSame;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.util.Date;
+
 import com.google.gson.Gson;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -88,6 +90,11 @@ public class MinifiedPuzzleTest {
         void testGetFeedback() {
             assertEquals(251, minifiedPuzzle.getFeedback().getFeedbackId());
             assertEquals(5, minifiedPuzzle.getFeedback().getFeedbacks().length);
+        }
+
+        @Test
+        void testPropertyCreatedDate() {
+            assertEquals(new Date(1422957376000l), minifiedPuzzle.getCreatedDate());
         }
 
     }

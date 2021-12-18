@@ -86,4 +86,8 @@ public class MinifiedPuzzle {
         return communityCreation;
     }
 
+    public Object getCreatedDate() {
+        return null;
+    }
+
 }
