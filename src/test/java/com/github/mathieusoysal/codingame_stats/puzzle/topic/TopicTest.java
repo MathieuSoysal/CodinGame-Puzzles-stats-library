@@ -38,14 +38,14 @@ public class TopicTest {
         }
 
         @Test
-        void testNotEquals(){
+        void testNotEquals() {
             Topic topic1 = new Topic("handle", "valued", null, TopicCategory.FUNDAMENTALS);
             Topic topic2 = new Topic("handle", "value", null, TopicCategory.FUNDAMENTALS);
             assertNotEquals(topic1, topic2);
         }
 
         @Test
-        void testHashcodeNotEquals(){
+        void testHashcodeNotEquals() {
             Topic topic1 = new Topic("handle", "value", null, TopicCategory.FUNDAMENTALS);
             Topic topic2 = new Topic("handle", "valued", null, TopicCategory.FUNDAMENTALS);
             assertNotEquals(topic1.hashCode(), topic2.hashCode());
