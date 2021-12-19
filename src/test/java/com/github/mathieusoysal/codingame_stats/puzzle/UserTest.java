@@ -9,7 +9,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-public class UserTest {
+class UserTest {
 
     @Nested
     class HashcodeAndEquals {
@@ -60,22 +60,22 @@ public class UserTest {
         User user;
 
         @BeforeEach
-        public void setUp() {
+        void setUp() {
             user = new Gson().fromJson(JSON_USER, User.class);
         }
 
         @Test
-        public void testGetUserId() {
+        void testGetUserId() {
             assertEquals(155929, user.getUserId());
         }
 
         @Test
-        public void testGetPseudo() {
+        void testGetPseudo() {
             assertEquals("[CG]jupoulton", user.getPseudo());
         }
 
         @Test
-        public void testGetPublicHandle() {
+        void testGetPublicHandle() {
             assertEquals("d39436e9a23b5060ed3efaf1c24b4ba8929551", user.getPublicHandle());
         }
 

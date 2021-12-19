@@ -10,10 +10,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-public class TopicTest {
+class TopicTest {
 
     @Test
-    public void testTopic() {
+    void testTopic() {
         Topic topic = new Topic("handle", "value", null, TopicCategory.FUNDAMENTALS);
         assertEquals("handle", topic.getHandle());
         assertEquals("value", topic.getValue());
@@ -75,42 +75,42 @@ public class TopicTest {
         Topic topic;
 
         @BeforeEach
-        public void setUp() {
+        void setUp() {
             topic = new Gson().fromJson(JSON_TOPIC, Topic.class);
         }
 
         @Test
-        public void testGetHandle() {
+        void testGetHandle() {
             assertEquals("data-structures", topic.getHandle());
         }
 
         @Test
-        public void testGetCategory() {
+        void testGetCategory() {
             assertEquals(TopicCategory.FUNDAMENTALS, topic.getCategory());
         }
 
         @Test
-        public void testGetValue() {
+        void testGetValue() {
             assertEquals("Data Structures", topic.getValue());
         }
 
         @Test
-        public void testGetChildren() {
+        void testGetChildren() {
             assertEquals(1, topic.getChildren().size());
         }
 
         @Test
-        public void testGetChildrenHandle() {
+        void testGetChildrenHandle() {
             assertEquals("queues", topic.getChildren().get(0).getHandle());
         }
 
         @Test
-        public void testGetChildrenCategory() {
+        void testGetChildrenCategory() {
             assertEquals(TopicCategory.FUNDAMENTALS, topic.getChildren().get(0).getCategory());
         }
 
         @Test
-        public void testGetChildrenValue() {
+        void testGetChildrenValue() {
             assertEquals("Queues", topic.getChildren().get(0).getValue());
         }
 

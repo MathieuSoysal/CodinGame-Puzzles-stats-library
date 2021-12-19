@@ -9,7 +9,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-public class TitleMapTest {
+class TitleMapTest {
 
     @Nested
     class HashcodeAndEqualsTest {
@@ -70,17 +70,17 @@ public class TitleMapTest {
         TitleMap titleMap;
 
         @BeforeEach
-        public void setUp() {
+        void setUp() {
             titleMap = new Gson().fromJson(JSON_TITLEMAP, TitleMap.class);
         }
 
         @Test
-        public void testGet1() {
+        void testGet1() {
             assertEquals("La Bataille", titleMap.getName1());
         }
 
         @Test
-        public void testGet2() {
+        void testGet2() {
             assertEquals("War", titleMap.getName2());
         }
 
