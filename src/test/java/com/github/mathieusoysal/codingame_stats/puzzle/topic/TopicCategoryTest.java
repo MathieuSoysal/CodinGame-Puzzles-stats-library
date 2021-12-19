@@ -9,10 +9,10 @@ import com.google.gson.Gson;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-public class TopicCategoryTest {
+class TopicCategoryTest {
 
     @Test
-    public void testComparator() {
+    void testComparator() {
         assertThat(TopicCategory.FUNDAMENTALS, lessThan(TopicCategory.ADVANCED));
         assertThat(TopicCategory.FUNDAMENTALS, lessThan(TopicCategory.INTERMEDIATE));
         assertThat(TopicCategory.INTERMEDIATE, lessThan(TopicCategory.ADVANCED));
@@ -22,26 +22,26 @@ public class TopicCategoryTest {
     class TestConversionFromJson {
         private class TestClassConversion {
 
-            public TopicCategory category;
+            TopicCategory category;
 
         }
 
         @Test
-        public void testConversionWithFundamentals() {
+        void testConversionWithFundamentals() {
             String json = "{\"category\":\"FUNDAMENTALS\"}";
             TestClassConversion testLevel = new Gson().fromJson(json, TestClassConversion.class);
             assertSame(TopicCategory.FUNDAMENTALS, testLevel.category);
         }
 
         @Test
-        public void testConversionWithIntermediate() {
+        void testConversionWithIntermediate() {
             String json = "{\"category\":\"INTERMEDIATE\"}";
             TestClassConversion testLevel = new Gson().fromJson(json, TestClassConversion.class);
             assertSame(TopicCategory.INTERMEDIATE, testLevel.category);
         }
 
         @Test
-        public void testConversionWithAdvanced() {
+        void testConversionWithAdvanced() {
             String json = "{\"category\":\"ADVANCED\"}";
             TestClassConversion testLevel = new Gson().fromJson(json, TestClassConversion.class);
             assertSame(TopicCategory.ADVANCED, testLevel.category);

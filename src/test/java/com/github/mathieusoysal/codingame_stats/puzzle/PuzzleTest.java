@@ -1,18 +1,17 @@
 package com.github.mathieusoysal.codingame_stats.puzzle;
 
-import com.github.mathieusoysal.codingame_stats.minifiedpuzzle.PuzzleLevel;
-import com.github.mathieusoysal.codingame_stats.puzzle.topic.TopicCategory;
-import com.google.gson.Gson;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertSame;
 
-import java.util.Date;
+import com.github.mathieusoysal.codingame_stats.minifiedpuzzle.PuzzleLevel;
+import com.github.mathieusoysal.codingame_stats.puzzle.topic.TopicCategory;
+import com.google.gson.Gson;
 
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-public class PuzzleTest {
+class PuzzleTest {
 
     @Nested
     class ConversionFromJsonTest {

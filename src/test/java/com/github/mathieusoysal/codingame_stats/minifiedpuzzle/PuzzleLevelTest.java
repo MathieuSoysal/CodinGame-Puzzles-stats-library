@@ -9,10 +9,10 @@ import com.google.gson.Gson;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-public class PuzzleLevelTest {
+class PuzzleLevelTest {
 
     @Test
-    public void testComparator() {
+    void testComparator() {
         assertThat(PuzzleLevel.TUTORIAL, lessThan(PuzzleLevel.EASY));
         assertThat(PuzzleLevel.EASY, lessThan(PuzzleLevel.MEDIUM));
         assertThat(PuzzleLevel.MEDIUM, lessThan(PuzzleLevel.HARD));
@@ -20,7 +20,7 @@ public class PuzzleLevelTest {
     }
 
     @Test
-    public void testIsSpecialLevel() {
+    void testIsSpecialLevel() {
         assertThat(PuzzleLevel.TUTORIAL.isSpecialLevel(), is(true));
         assertThat(PuzzleLevel.EASY.isSpecialLevel(), is(false));
         assertThat(PuzzleLevel.MEDIUM.isSpecialLevel(), is(false));
@@ -35,61 +35,61 @@ public class PuzzleLevelTest {
     class TestConversionFromGson {
         private class TestClassConversion {
 
-            public PuzzleLevel level;
+            PuzzleLevel level;
 
         }
 
         @Test
-        public void testConversionWithTutorial() {
+        void testConversionWithTutorial() {
             String json = "{\"level\":\"tutorial\"}";
             TestClassConversion testLevel = new Gson().fromJson(json, TestClassConversion.class);
             assertThat(testLevel.level, is(PuzzleLevel.TUTORIAL));
         }
 
         @Test
-        public void testConversionWithEasy() {
+        void testConversionWithEasy() {
             String json = "{\"level\":\"easy\"}";
             TestClassConversion testLevel = new Gson().fromJson(json, TestClassConversion.class);
             assertThat(testLevel.level, is(PuzzleLevel.EASY));
         }
 
         @Test
-        public void testConversionWithMedium() {
+        void testConversionWithMedium() {
             String json = "{\"level\":\"medium\"}";
             TestClassConversion testLevel = new Gson().fromJson(json, TestClassConversion.class);
             assertThat(testLevel.level, is(PuzzleLevel.MEDIUM));
         }
 
         @Test
-        public void testConversionWithHard() {
+        void testConversionWithHard() {
             String json = "{\"level\":\"hard\"}";
             TestClassConversion testLevel = new Gson().fromJson(json, TestClassConversion.class);
             assertThat(testLevel.level, is(PuzzleLevel.HARD));
         }
 
         @Test
-        public void testConversionWithExpert() {
+        void testConversionWithExpert() {
             String json = "{\"level\":\"expert\"}";
             TestClassConversion testLevel = new Gson().fromJson(json, TestClassConversion.class);
             assertThat(testLevel.level, is(PuzzleLevel.EXPERT));
         }
 
         @Test
-        public void testConversionWithMulti() {
+        void testConversionWithMulti() {
             String json = "{\"level\":\"multi\"}";
             TestClassConversion testLevel = new Gson().fromJson(json, TestClassConversion.class);
             assertThat(testLevel.level, is(PuzzleLevel.MULTI));
         }
 
         @Test
-        public void testConversionWithCodegolf() {
+        void testConversionWithCodegolf() {
             String json = "{\"level\":\"codegolf\"}";
             TestClassConversion testLevel = new Gson().fromJson(json, TestClassConversion.class);
             assertThat(testLevel.level, is(PuzzleLevel.CODEGOLF));
         }
 
         @Test
-        public void testConversionWithOptim() {
+        void testConversionWithOptim() {
             String json = "{\"level\":\"optim\"}";
             TestClassConversion testLevel = new Gson().fromJson(json, TestClassConversion.class);
             assertThat(testLevel.level, is(PuzzleLevel.OPTIM));
