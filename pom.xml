@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.github.mathieusoysal</groupId>
-  <artifactId>CodinGame-Puzzles-Stats</artifactId>
+  <artifactId>codinGame-puzzles-stats</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
 

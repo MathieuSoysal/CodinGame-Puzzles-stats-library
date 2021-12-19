@@ -19,7 +19,7 @@
     <dependencies>
         <dependency>
             <groupId>io.github.mathieusoysal</groupId>
-            <artifactId>CodinGame-Puzzles-stats</artifactId>
+            <artifactId>codingame-puzzles-stats</artifactId>
             <version>1.0.0</version>
         </dependency>
     </dependencies>
