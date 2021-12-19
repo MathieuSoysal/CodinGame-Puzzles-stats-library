@@ -23,7 +23,7 @@ If you have Maven, add the following to the dependencies of your `pom.xml` file:
 </dependency>
 ```
 
->*See an example of a [pom.xml](https://github.com/DevLab-umontp/Librarie-Java-EDT/blob/main/ressources/pom.xml#L20L24) file with the CodinGame-Puzzles-stats-library*
+>*See an example of a [pom.xml](https://github.com/MathieuSoysal/CodinGame-Puzzles-stats-library/blob/d8bdf1a7f1002e387bfae0beb255638f59e3c8b9/ressources-readme/pom-exemple.xml#L20-L24) file with the CodinGame-Puzzles-stats-library*
 ### Gradle
 
 If you are using Gradle, add the following to the dependencies of your `build.gradle` file:
