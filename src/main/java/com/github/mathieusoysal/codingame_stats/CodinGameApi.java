@@ -29,13 +29,13 @@ class CodinGameApi {
                 .cacheResponses(Cache.builder()
                         .depth(20)
                         .maxAge(5, TimeUnit.HOURS))
-                .enableCookieManagement(false);
+                .enableCookieManagement(false)
+                .addDefaultHeader("Content-Type", "application/javascript");
     }
 
     static List<Puzzle> getPuzzles(List<Integer> puzzleIds) {
         HttpResponse<Puzzle[]> response = Unirest
                 .post("https://www.codingame.com/services/Puzzle/findProgressByIds")
-                .header("Content-Type", "text/plain")
                 .body(String.format("[%s,null,1]", formatListIds(puzzleIds)))
                 .asObject(Puzzle[].class);
         return Arrays.asList(response.getBody());
@@ -43,7 +43,6 @@ class CodinGameApi {
 
     static Puzzle getPuzzleFromPrettyId(String puzzlePrettyId) {
         HttpResponse<Puzzle> response = Unirest.post("https://www.codingame.com/services/Puzzle/findProgressByPrettyId")
-                .header("Content-Type", "text/plain")
                 .body(String.format("[\"%s\", null]", puzzlePrettyId))
                 .asObject(Puzzle.class);
         return response.getBody();
@@ -52,7 +51,7 @@ class CodinGameApi {
     static List<MinifiedPuzzle> getAllMinifiedPuzzles() {
         HttpResponse<MinifiedPuzzle[]> response = Unirest
                 .post("https://www.codingame.com/services/Puzzle/findAllMinimalProgress")
-                .header("Content-Type", "application/javascript")
+                
                 .body("[null]")
                 .asObject(MinifiedPuzzle[].class);
         return Arrays.asList(response.getBody());
