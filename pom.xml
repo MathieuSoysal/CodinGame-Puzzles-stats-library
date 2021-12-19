@@ -70,9 +70,9 @@
   </issueManagement>
 
   <scm>
-    <connection>scm:git:git://github.com/MathieuSoysal/CodinGame-Puzzles-stats.git</connection>
-    <developerConnection>scm:git:ssh://github.com:MathieuSoysal/CodinGame-Puzzles-stats.git</developerConnection>
-    <url>http://github.com/MathieuSoysal/CodinGame-Puzzles-stats</url>
+    <connection>scm:git:git://github.com/MathieuSoysal/CodinGame-Puzzles-stats-library.git</connection>
+    <developerConnection>scm:git:ssh://github.com:MathieuSoysal/CodinGame-Puzzles-stats-library.git</developerConnection>
+    <url>http://github.com/MathieuSoysal/CodinGame-Puzzles-stats-library</url>
   </scm>
 
   <profiles>
@@ -171,7 +171,7 @@
         <repository>
           <id>github</id>
           <name>GitHub MathieuSoysal Apache Maven Packages</name>
-          <url>https://maven.pkg.github.com/MathieuSoysal/CodinGame-Puzzles-stats</url>
+          <url>https://maven.pkg.github.com/MathieuSoysal/CodinGame-Puzzles-stats-library</url>
         </repository>
       </distributionManagement>
     </profile>
