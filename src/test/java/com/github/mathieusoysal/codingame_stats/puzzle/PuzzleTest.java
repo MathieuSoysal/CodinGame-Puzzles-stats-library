@@ -253,7 +253,7 @@ class PuzzleTest {
         @Test
         void testPropertyCreationTime() {
             Puzzle puzzle = new Gson().fromJson(JSON_PUZZLE, Puzzle.class);
-            assertEquals(1422957376000l, puzzle.getCreationTime());
+            assertEquals(1422957376000L, puzzle.getCreationTime());
         }
 
     }

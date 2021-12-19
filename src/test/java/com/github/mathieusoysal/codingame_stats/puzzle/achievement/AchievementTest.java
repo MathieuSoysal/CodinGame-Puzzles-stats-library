@@ -16,36 +16,36 @@ class AchievementTest {
 
         @Test
         void testEquals() {
-            Achievement achievement1 = new Achievement("1", 23, "titled", "descriptiond", 501, 1, 2, 6, 1l, 3d,
+            Achievement achievement1 = new Achievement("1", 23, "titled", "descriptiond", 501, 1, 2, 6, 1L, 3d,
                     AchievementLevel.SILVER);
-            Achievement achievement2 = new Achievement("1", 2, "title", "description", 50, 0, 1, 5, 0l, 2d,
+            Achievement achievement2 = new Achievement("1", 2, "title", "description", 50, 0, 1, 5, 0L, 2d,
                     AchievementLevel.BRONZE);
             assertEquals(achievement1, achievement2);
         }
 
         @Test
         void testNotEquals() {
-            Achievement achievement1 = new Achievement("1", 2, "title", "description", 50, 0, 1, 5, 0l, 2d,
+            Achievement achievement1 = new Achievement("1", 2, "title", "description", 50, 0, 1, 5, 0L, 2d,
                     AchievementLevel.BRONZE);
-            Achievement achievement2 = new Achievement("2", 2, "title", "description", 50, 0, 1, 5, 0l, 2d,
+            Achievement achievement2 = new Achievement("2", 2, "title", "description", 50, 0, 1, 5, 0L, 2d,
                     AchievementLevel.BRONZE);
             assertNotEquals(achievement1, achievement2);
         }
 
         @Test
         void testHashcodeEquals() {
-            Achievement achievement1 = new Achievement("1", 23, "titled", "descriptiond", 501, 1, 2, 6, 1l, 3d,
+            Achievement achievement1 = new Achievement("1", 23, "titled", "descriptiond", 501, 1, 2, 6, 1L, 3d,
                     AchievementLevel.SILVER);
-            Achievement achievement2 = new Achievement("1", 2, "title", "description", 50, 0, 1, 5, 0l, 2d,
+            Achievement achievement2 = new Achievement("1", 2, "title", "description", 50, 0, 1, 5, 0L, 2d,
                     AchievementLevel.BRONZE);
             assertEquals(achievement1.hashCode(), achievement2.hashCode());
         }
 
         @Test
         void testHashcodeNotEquals() {
-            Achievement achievement1 = new Achievement("1", 2, "title", "description", 50, 0, 1, 5, 0l, 2d,
+            Achievement achievement1 = new Achievement("1", 2, "title", "description", 50, 0, 1, 5, 0L, 2d,
                     AchievementLevel.BRONZE);
-            Achievement achievement2 = new Achievement("2", 2, "title", "description", 50, 0, 1, 5, 0l, 2d,
+            Achievement achievement2 = new Achievement("2", 2, "title", "description", 50, 0, 1, 5, 0L, 2d,
                     AchievementLevel.BRONZE);
             assertNotEquals(achievement1.hashCode(), achievement2.hashCode());
         }
