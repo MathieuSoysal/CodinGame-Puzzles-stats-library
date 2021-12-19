@@ -11,7 +11,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-public class FeedbackTest {
+class FeedbackTest {
 
     @Test
     void testGetMoy() {
@@ -45,7 +45,7 @@ public class FeedbackTest {
         Feedback feedback;
 
         @BeforeEach
-        public void setUp() {
+        void setUp() {
             feedback = new Gson().fromJson(JSON_FEEDBACK, Feedback.class);
         }
 

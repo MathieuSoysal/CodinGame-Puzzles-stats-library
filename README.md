@@ -1,6 +1,8 @@
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=MathieuSoysal_CodinGame-Puzzles-stats-library&metric=coverage)](https://sonarcloud.io/summary/new_code?id=MathieuSoysal_CodinGame-Puzzles-stats-library)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=MathieuSoysal_CodinGame-Puzzles-stats-library&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=MathieuSoysal_CodinGame-Puzzles-stats-library)
 ![GitHub Actions](https://github.com/DevLab-umontp/API-JAVA-EDT/workflows/Java%20CI%20with%20Maven/badge.svg)
 
-## <img src="https://www.svgrepo.com/show/232495/java.svg" width="100"> CodinGame Puzzles stats library[![GitHub](https://img.shields.io/github/license/MathieuSoysal/CodinGame-Puzzles-stats-library)](https://github.com/MathieuSoysal/CodinGame-Puzzles-stats-library/blob/master/LICENSE)
+# <img src="https://www.svgrepo.com/show/232495/java.svg" width="100"> CodinGame Puzzles stats library [![GitHub](https://img.shields.io/badge/license-GNU%20General%20Public%20License%20v3.0-green)](https://github.com/MathieuSoysal/CodinGame-Puzzles-stats-library/blob/master/LICENSE)
 
 Simple library for interacting with CodinGame's puzzle API.
 

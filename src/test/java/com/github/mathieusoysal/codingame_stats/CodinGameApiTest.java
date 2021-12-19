@@ -1,21 +1,22 @@
 package com.github.mathieusoysal.codingame_stats;
 
-import com.github.mathieusoysal.codingame_stats.CodinGameApi;
-import com.github.mathieusoysal.codingame_stats.minifiedpuzzle.MinifiedPuzzle;
-import java.util.List;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.everyItem;
 import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.hasProperty;
 import static org.hamcrest.Matchers.notNullValue;
 
+import java.util.List;
+
+import com.github.mathieusoysal.codingame_stats.minifiedpuzzle.MinifiedPuzzle;
+
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-public class CodinGameApiTest {
+class CodinGameApiTest {
 
     @Test
-    public void testGetMinifiedPuzzles() {
+    void testGetMinifiedPuzzles() {
         List<MinifiedPuzzle> puzzles = CodinGameApi.getAllMinifiedPuzzles();
         assertThat(puzzles.size(), greaterThan(0));
     }

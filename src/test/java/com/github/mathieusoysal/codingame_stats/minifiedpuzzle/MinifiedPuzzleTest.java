@@ -12,7 +12,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-public class MinifiedPuzzleTest {
+class MinifiedPuzzleTest {
 
     @Nested
     class ConversionFromJsonTest {
@@ -42,7 +42,7 @@ public class MinifiedPuzzleTest {
         MinifiedPuzzle minifiedPuzzle;
 
         @BeforeEach
-        public void setUp() {
+        void setUp() {
             minifiedPuzzle = new Gson().fromJson(JSON_MINIFIED_PUZZLE, MinifiedPuzzle.class);
         }
 

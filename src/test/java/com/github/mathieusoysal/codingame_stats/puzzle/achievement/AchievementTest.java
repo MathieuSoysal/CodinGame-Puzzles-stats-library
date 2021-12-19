@@ -1,14 +1,15 @@
 package com.github.mathieusoysal.codingame_stats.puzzle.achievement;
 
-import com.google.gson.Gson;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
+
+import com.google.gson.Gson;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-public class AchievementTest {
+class AchievementTest {
 
     @Nested
     class HashcodeAndEqualsTest {
@@ -73,7 +74,7 @@ public class AchievementTest {
         Achievement achievement;
 
         @BeforeEach
-        public void setUp() {
+        void setUp() {
             achievement = new Gson().fromJson(JSON_ACHIEVEMENT, Achievement.class);
         }
 
