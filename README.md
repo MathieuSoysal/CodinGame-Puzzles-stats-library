@@ -94,7 +94,7 @@ public class CodeExemple {
     }
 }
 ```
->*See more [code exemples](ressources/ExempleDeCode.java)*
+>*See more [code exemples](https://github.com/MathieuSoysal/CodinGame-Puzzles-stats-library/blob/master/ressources-readme/CodeExemple.java)*
 ## Contribution
 Suggestions and contributions are always welcome! Please discuss larger changes via an [issue](https://github.com/MathieuSoysal/CodinGame-Puzzles-stats-library/issues) before submitting a request.
 
