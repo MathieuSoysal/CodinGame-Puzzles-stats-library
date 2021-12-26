@@ -1,3 +1,4 @@
+![Maven Central](https://img.shields.io/maven-central/v/io.github.mathieusoysal/codingame-puzzles-stats)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=MathieuSoysal_CodinGame-Puzzles-stats-library&metric=coverage)](https://sonarcloud.io/summary/new_code?id=MathieuSoysal_CodinGame-Puzzles-stats-library)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=MathieuSoysal_CodinGame-Puzzles-stats-library&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=MathieuSoysal_CodinGame-Puzzles-stats-library)
 ![GitHub Actions](https://github.com/MathieuSoysal/CodinGame-Puzzles-stats-library/workflows/Java%20CI%20with%20Maven/badge.svg)
