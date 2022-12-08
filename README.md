@@ -20,7 +20,7 @@ If you have Maven, add the following to the dependencies of your `pom.xml` file:
 <dependency>
   <groupId>io.github.mathieusoysal</groupId>
   <artifactId>codingame-puzzles-stats</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.5</version>
 </dependency>
 ```
 
@@ -30,7 +30,7 @@ If you have Maven, add the following to the dependencies of your `pom.xml` file:
 If you are using Gradle, add the following to the dependencies of your `build.gradle` file:
 
 ```
-    implementation 'io.github.mathieusoysal:codingame-puzzles-stats:1.0.2'
+    implementation 'io.github.mathieusoysal:codingame-puzzles-stats:1.0.5'
 ```
 
 ## Example code for using the CodinGame-Puzzles-Stats library
