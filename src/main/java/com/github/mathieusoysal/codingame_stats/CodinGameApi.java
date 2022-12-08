@@ -30,7 +30,7 @@ class CodinGameApi {
                         .depth(20)
                         .maxAge(5, TimeUnit.HOURS))
                 .enableCookieManagement(false)
-                .addDefaultHeader("Content-Type", "application/javascript");
+                .addDefaultHeader("Content-Type", "application/json");
     }
 
     static List<Puzzle> getPuzzles(List<Integer> puzzleIds) {
